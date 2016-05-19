@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="ProyectoSiis2.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+          <div>
+            <div class="Principal">
+
+                <div id="header">
+
+                    <div id="cabecera">
+                        <img id="logoSena" src="Imagenes/sena.png" />
+                        <img id="logoSiis" src="Imagenes/LOGO.png " />
+                    </div>
+                    <div id="banner">
+
+                        <asp:ContentPlaceHolder ID="ContenidoBanner" runat="server">
+                            
+                        </asp:ContentPlaceHolder>
+
+                    </div>
+
+
+                    <div id="cuerpo">
+                        <asp:ContentPlaceHolder ID="ContenidoCuerpo" runat="server">
+                        
+                        </asp:ContentPlaceHolder>
+                        <ul><a href="Home.aspx">Ingreso</a></ul>
+
+                         
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+   
+    </form>
+</body>
+
+</html>
