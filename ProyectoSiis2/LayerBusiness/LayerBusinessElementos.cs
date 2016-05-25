@@ -81,5 +81,41 @@ namespace LayerBusiness
         }
 
 
+
+        //Insertar reserva
+        public int InsertarReserva(Int64 Id, string NombreSolicitante, string ElementoAPrestar, DateTime FechaPrestao, string Observaciones, DateTime fechadevolucion)
+        {
+            try
+            {
+                return ObjBS.InsertarReserva(Id, NombreSolicitante, ElementoAPrestar, FechaPrestao, Observaciones, fechadevolucion);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                ObjBS = null;
+            }
+        }
+
+        //Mostrar Reserva
+
+        public DataTable MostarReserva()
+        {
+            try
+            {
+                return ObjBS.MostarReserva();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                ObjBS = null;
+            }
+        }
+
     }
 }

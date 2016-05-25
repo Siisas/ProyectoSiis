@@ -135,7 +135,7 @@ namespace LayerData
         }
 
 
-        //LayerData de Reservas
+        //LayerData de Reservas Para la Pagina reserva
         public int InsertarReserva(Int64 Id, string NombreSolicitante, string ElementoAPrestar, DateTime FechaPrestao, string Observaciones, DateTime fechadevolucion)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
@@ -166,5 +166,36 @@ namespace LayerData
                 }
             }
         }
+
+   //Mostrar Reserva para la pagina Gestion
+
+        public DataTable MostarReserva()
+        {
+            using (SqlConnection cnx = new SqlConnection(strconn))
+            {
+                cnx.Open();
+                SqlDataAdapter dAd = new SqlDataAdapter("SpMostarReserva", cnx);
+                dAd.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataSet ds = new DataSet();
+
+                try
+                {
+                    dAd.Fill(ds, "Table");
+                    return ds.Tables["Table"];
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                finally
+                {
+                    cnx.Close();
+                    cnx.Dispose();
+                    dAd.Dispose();
+                    ds.Dispose();
+                }
+            }
+        }
+
     }
 }

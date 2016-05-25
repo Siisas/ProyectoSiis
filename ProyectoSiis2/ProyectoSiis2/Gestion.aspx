@@ -6,7 +6,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContenidoCuerpo" runat="server">
 
       <div>
-    <asp:GridView ID="GvDatos" runat="server" AutoGenerateColumns="False" DataKeyNames="IdElemento" >
+    <asp:GridView ID="GvDatos" runat="server" AutoGenerateColumns="False" DataKeyNames="IdElemento" OnRowDeleting="GvDatos_RowDeleting" >
                 <Columns>
                     <asp:BoundField DataField="IdElemento" HeaderText="Id Elemento" />
                     <asp:BoundField DataField="NumeroPlaca" HeaderText="Numero Placa" />
@@ -22,4 +22,8 @@
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
+</div>
+      <p>
+            <asp:Label ID = "mensaje" runat = "server"></asp:Label>
+        </p>
 </asp:Content>

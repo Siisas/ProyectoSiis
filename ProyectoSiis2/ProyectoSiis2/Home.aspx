@@ -13,7 +13,7 @@
 
         <img id="logogestion" src="../imagenes/gestionInv.jpg">
 
-        <a href="..//index.html">
+        <a href="Gestion.aspx">
             <div class="gestion">Gestion </div>
         </a>
 
@@ -39,7 +39,7 @@
         </a>
         <img id="logodevolucion" src="../imagenes/devolucion.jpg">
         <img id="logoreservas" src="../imagenes/reservas.jpg">
-        <a href="index.html">
+        <a href="Reserva.aspx">
             <div class="reservas">Reservas</div>
         </a>
 
