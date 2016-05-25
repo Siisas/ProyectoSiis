@@ -20,7 +20,7 @@
 
 
 
-        <a href="prestamo.html">
+        <a href="Prestamo.aspx">
             <div class="prestamo">Prestamo</div>
         </a>
         <img id="logoprestamo" src="../imagenes/prestamo.jpg">

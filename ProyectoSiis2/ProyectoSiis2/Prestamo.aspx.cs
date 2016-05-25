@@ -24,6 +24,9 @@ namespace ProyectoSiis2
 
             GridView1.DataSource = objBS.Prestamo();
             GridView1.DataBind();
+            
+
+
         }
     }
 }

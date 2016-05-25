@@ -34,7 +34,7 @@
                         <asp:ContentPlaceHolder ID="ContenidoCuerpo" runat="server">
                         
                         </asp:ContentPlaceHolder>
-                        <ul><a href="Home.aspx">Ingreso</a></ul>
+                        <ul><a href="Home.aspx">Home</a></ul>
 
                          
                     </div>
