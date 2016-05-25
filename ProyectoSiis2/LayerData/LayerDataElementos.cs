@@ -197,5 +197,35 @@ namespace LayerData
             }
         }
 
+        //LayerData Prestamo
+        public DataTable Prestamo()
+        {
+            using (SqlConnection cnx = new SqlConnection(strconn))
+            {
+                cnx.Open();
+                SqlDataAdapter ObjMostrar = new SqlDataAdapter("SpPrestamo", cnx);
+                ObjMostrar.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataSet ds = new DataSet();
+                try
+                {
+                    ObjMostrar.Fill(ds, "TablePrestamo");
+                    return ds.Tables["TablePrestamo"];
+
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                finally
+                {
+
+
+                    cnx.Close();
+                    cnx.Dispose();
+                    ObjMostrar.Dispose();
+                    ds.Dispose();
+                }
+            }
+        }
     }
 }

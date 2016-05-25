@@ -117,5 +117,28 @@ namespace LayerBusiness
             }
         }
 
+
+
+       //mostrar Prestamo
+
+          public DataTable Prestamo()
+        {
+            try
+            {
+                return ObjBS.Prestamo();
+            }
+
+            catch (Exception)
+            {
+                throw;
+            }
+
+            finally
+            {
+                ObjBS = null;
+            }
+
+        }
+
     }
 }
