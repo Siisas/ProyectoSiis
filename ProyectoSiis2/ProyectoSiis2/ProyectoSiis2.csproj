@@ -124,6 +124,12 @@
   <ItemGroup>
     <Folder Include="Imagenes\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LayerBusiness\LayerBusiness.csproj">
+      <Project>{ed344e18-86ae-490f-bdfc-a418f32dfd20}</Project>
+      <Name>LayerBusiness</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
