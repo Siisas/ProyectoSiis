@@ -134,5 +134,37 @@ namespace LayerData
             }
         }
 
+
+        //LayerData de Reservas
+        public int InsertarReserva(Int64 Id, string NombreSolicitante, string ElementoAPrestar, DateTime FechaPrestao, string Observaciones, DateTime fechadevolucion)
+        {
+            using (SqlConnection cnx = new SqlConnection(strconn))
+            {
+                cnx.Open();
+                SqlCommand Ordensql = new SqlCommand("SpInsertarReserva", cnx);
+                Ordensql.CommandType = CommandType.StoredProcedure;
+
+                try
+                {
+                    Ordensql.Parameters.AddWithValue("@IdReserva", Id);
+                    Ordensql.Parameters.AddWithValue("@NombreSolicitante", NombreSolicitante);
+                    Ordensql.Parameters.AddWithValue("@ElementoAPrestar", ElementoAPrestar);
+                    Ordensql.Parameters.AddWithValue("@FechaPrestamo", FechaPrestao);
+                    Ordensql.Parameters.AddWithValue("@Observaciones", Observaciones);
+                    Ordensql.Parameters.AddWithValue("@fechaDevolucion", fechadevolucion);
+                    return Ordensql.ExecuteNonQuery();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                finally
+                {
+                    cnx.Close();
+                    cnx.Dispose();
+                    Ordensql.Dispose();
+                }
+            }
+        }
     }
 }

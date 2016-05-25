@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Gestion.aspx" />
     <Content Include="Ingreso.aspx" />
     <Content Include="packages.config" />
     <Content Include="PaginaMaestra.Master" />
@@ -80,10 +81,18 @@
     <Content Include="App_Themes\Tema1\Style.css" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Reserva.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebMestra.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gestion.aspx.cs">
+      <DependentUpon>Gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion.aspx.designer.cs">
+      <DependentUpon>Gestion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -113,6 +122,13 @@
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reserva.aspx.cs">
+      <DependentUpon>Reserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserva.aspx.designer.cs">
+      <DependentUpon>Reserva.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebMestra.aspx.cs">
       <DependentUpon>WebMestra.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

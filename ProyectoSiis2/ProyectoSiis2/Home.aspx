@@ -7,7 +7,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContenidoCuerpo" runat="server">
     <div>
         <img id="logoingreso" src="../imagenes/ingreso.jpg">
-        <a href="Siis.aspx">
+        <a href="Ingreso.aspx">
             <div class="ingreso">Ingreso </div>
         </a>
 
