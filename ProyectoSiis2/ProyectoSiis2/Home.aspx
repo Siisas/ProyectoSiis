@@ -42,6 +42,6 @@
         <a href="Reserva.aspx">
             <div class="reservas">Reservas</div>
         </a>
-        <h1></h1>
+        
     </div>
 </asp:Content>
