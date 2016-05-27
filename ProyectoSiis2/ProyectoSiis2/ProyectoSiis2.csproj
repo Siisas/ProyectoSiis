@@ -68,6 +68,20 @@
   <ItemGroup>
     <Content Include="default.aspx" />
     <Content Include="Gestion.aspx" />
+    <Content Include="Imagenes\devolucion.JPG" />
+    <Content Include="Imagenes\favicon.ico" />
+    <Content Include="Imagenes\faviconn.ico" />
+    <Content Include="Imagenes\fondo.jpg" />
+    <Content Include="Imagenes\gestionInv.JPG" />
+    <Content Include="Imagenes\ingreso.JPG" />
+    <Content Include="Imagenes\inventario.JPG" />
+    <Content Include="Imagenes\login.png" />
+    <Content Include="Imagenes\LOGO.png" />
+    <Content Include="Imagenes\prestamo.JPG" />
+    <Content Include="Imagenes\reservas.JPG" />
+    <Content Include="Imagenes\sena.png" />
+    <Content Include="Imagenes\trazabilidad.JPG" />
+    <Content Include="Imagenes\usuario.png" />
     <Content Include="Ingreso.aspx" />
     <Content Include="packages.config" />
     <Content Include="PaginaMaestra.Master" />
@@ -156,9 +170,7 @@
       <DependentUpon>WebMestra.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Imagenes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\LayerBusiness\LayerBusiness.csproj">
       <Project>{ed344e18-86ae-490f-bdfc-a418f32dfd20}</Project>
