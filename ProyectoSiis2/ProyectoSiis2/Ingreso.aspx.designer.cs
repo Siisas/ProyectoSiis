@@ -13,15 +13,6 @@ namespace ProyectoSiis2 {
     public partial class ingreso {
         
         /// <summary>
-        /// mensaje control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label mensaje;
-        
-        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -31,13 +22,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// TxtId control.
+        /// TxtIdElemento control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtId;
+        protected global::System.Web.UI.WebControls.TextBox TxtIdElemento;
         
         /// <summary>
         /// Label2 control.
@@ -49,13 +40,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// TxtNombreSolicitante control.
+        /// TxtNumeroPlaca control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNombreSolicitante;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroPlaca;
         
         /// <summary>
         /// Label3 control.
@@ -67,13 +58,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// TxtElementoAPrestar control.
+        /// TxtNumeroSerial control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtElementoAPrestar;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroSerial;
         
         /// <summary>
         /// Label4 control.
@@ -85,13 +76,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// TxtFechaPrestao control.
+        /// TxtMarca control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtFechaPrestao;
+        protected global::System.Web.UI.WebControls.TextBox TxtMarca;
         
         /// <summary>
         /// Label5 control.
@@ -103,13 +94,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// TxtObservaciones control.
+        /// TxtModelo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtObservaciones;
+        protected global::System.Web.UI.WebControls.TextBox TxtModelo;
         
         /// <summary>
         /// Label6 control.
@@ -121,13 +112,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// Txtfechadevolucion control.
+        /// TxtDescripcion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtfechadevolucion;
+        protected global::System.Web.UI.WebControls.TextBox TxtDescripcion;
         
         /// <summary>
         /// BtnGuardar control.
@@ -148,12 +139,12 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Button BtnCancelar;
         
         /// <summary>
-        /// LblMsg control.
+        /// Label7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblMsg;
+        protected global::System.Web.UI.WebControls.Label Label7;
     }
 }
