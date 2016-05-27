@@ -6,7 +6,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContenidoCuerpo" runat="server">
 
 
-    </div>
+    
          <p>
             <asp:Label ID = "mensaje" runat = "server"></asp:Label>
         </p>
