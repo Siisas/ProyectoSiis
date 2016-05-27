@@ -66,10 +66,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="default.aspx" />
     <Content Include="Gestion.aspx" />
     <Content Include="Ingreso.aspx" />
     <Content Include="packages.config" />
     <Content Include="PaginaMaestra.Master" />
+    <None Include="Properties\PublishProfiles\siis - Web Deploy.pubxml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -87,6 +91,13 @@
     <Content Include="WebMestra.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Gestion.aspx.cs">
       <DependentUpon>Gestion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
