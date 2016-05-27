@@ -23,12 +23,7 @@
     </div>
     <div>
         <h3>Seleccione Numero de placa </h3>
-        <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource1" DataTextField="NumeroPlaca" DataValueField="NumeroPlaca"></asp:DropDownList>
         <h3>Seleccione la placa del elemento</h3>
-        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Marca" DataValueField="Marca"></asp:DropDownList>
-       
-        
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoConnectionString2 %>" SelectCommand="SELECT * FROM [tblElementos]"></asp:SqlDataSource>
     </div>
     
     <div>
