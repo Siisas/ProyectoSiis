@@ -10,7 +10,7 @@ namespace LayerData
 {
     public class LayerDataElementos
     {
-        public string strconn = @"Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID=Siis@proyectosiis;Password={123456789Aa;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;";
+        public string strconn = @"Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID=Siis@proyectosiis;Password={123456789Aa];Trusted_Connection=False;Encrypt=True;Connection Timeout=30;";
 
         public LayerDataElementos() { }
 
