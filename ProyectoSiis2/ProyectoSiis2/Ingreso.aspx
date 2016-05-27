@@ -12,7 +12,7 @@
         </p>
 
     
-
+<%--
         <div>
     <h1> Insertar Elemento </h1>
         <table class = "auto-style1">
@@ -84,7 +84,7 @@
         <p>
             <asp:Label ID ="Label7" runat="server"></asp:Label>
         </p>
-    
+    --%>
 
 
 
