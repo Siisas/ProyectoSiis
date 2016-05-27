@@ -22,13 +22,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// TxtIdElemento control.
+        /// TxtId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtIdElemento;
+        protected global::System.Web.UI.WebControls.TextBox TxtId;
         
         /// <summary>
         /// Label2 control.
@@ -40,13 +40,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// TxtNumeroPlaca control.
+        /// TxtNombreSolicitante control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeroPlaca;
+        protected global::System.Web.UI.WebControls.TextBox TxtNombreSolicitante;
         
         /// <summary>
         /// Label3 control.
@@ -58,13 +58,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// TxtNumeroSerial control.
+        /// TxtElementoAPrestar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeroSerial;
+        protected global::System.Web.UI.WebControls.TextBox TxtElementoAPrestar;
         
         /// <summary>
         /// Label4 control.
@@ -76,13 +76,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// TxtMarca control.
+        /// TxtFechaPrestao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtMarca;
+        protected global::System.Web.UI.WebControls.TextBox TxtFechaPrestao;
         
         /// <summary>
         /// Label5 control.
@@ -94,13 +94,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// TxtModelo control.
+        /// TxtObservaciones control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtModelo;
+        protected global::System.Web.UI.WebControls.TextBox TxtObservaciones;
         
         /// <summary>
         /// Label6 control.
@@ -112,13 +112,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// TxtDescripcion control.
+        /// Txtfechadevolucion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtDescripcion;
+        protected global::System.Web.UI.WebControls.TextBox Txtfechadevolucion;
         
         /// <summary>
         /// BtnGuardar control.
@@ -139,12 +139,12 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Button BtnCancelar;
         
         /// <summary>
-        /// Label7 control.
+        /// LblMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.Label LblMsg;
     }
 }
