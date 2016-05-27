@@ -82,7 +82,8 @@
     <Content Include="Imagenes\sena.png" />
     <Content Include="Imagenes\trazabilidad.JPG" />
     <Content Include="Imagenes\usuario.png" />
-    <Content Include="Ingreso.aspx" />
+    <Content Include="ingreso.aspx" />
+    <Content Include="Ingreso2.aspx" />
     <Content Include="packages.config" />
     <Content Include="PaginaMaestra.Master" />
     <None Include="Properties\PublishProfiles\siis - Web Deploy.pubxml">
@@ -126,12 +127,19 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Ingreso.aspx.cs">
-      <DependentUpon>Ingreso.aspx</DependentUpon>
+    <Compile Include="ingreso.aspx.cs">
+      <DependentUpon>ingreso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ingreso.aspx.designer.cs">
-      <DependentUpon>Ingreso.aspx</DependentUpon>
+    <Compile Include="ingreso.aspx.designer.cs">
+      <DependentUpon>ingreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ingreso2.aspx.cs">
+      <DependentUpon>Ingreso2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ingreso2.aspx.designer.cs">
+      <DependentUpon>Ingreso2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
