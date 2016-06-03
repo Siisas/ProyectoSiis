@@ -6,5 +6,5 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContenidoCuerpo" runat="server">
 
 
-    <p>hola</p>
+    <p>holas</p>
 </asp:Content>
