@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.aspx" />
+    <Content Include="dropDownList.aspx" />
     <Content Include="Gestion.aspx" />
     <Content Include="Imagenes\devolucion.JPG" />
     <Content Include="Imagenes\favicon.ico" />
@@ -112,6 +113,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dropDownList.aspx.cs">
+      <DependentUpon>dropDownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dropDownList.aspx.designer.cs">
+      <DependentUpon>dropDownList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Gestion.aspx.cs">
       <DependentUpon>Gestion.aspx</DependentUpon>
