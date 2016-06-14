@@ -6,5 +6,5 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContenidoCuerpo" runat="server">
 
 
-    <p>holas</p>
+    <asp:DropDownList ID="DropDownList1" runat="server" DataValueField="id" DataTextField="id"></asp:DropDownList>
 </asp:Content>
