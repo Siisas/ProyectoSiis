@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="ProyectoSiis2.Home" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="IngresoELemento.aspx.cs" Inherits="ProyectoSiis2.IngresoELemento" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContenidoBanner" runat="server">
@@ -109,14 +108,41 @@
         --%>
 
         <div class="jumbotron">
-            <h1>Bienvenidos al Sistema de Información</h1>
-            <h1>                 Inventarios Sena</h1>
-            <h1                     >Consultec</h1>
+            <h6>Id Elemento</h6>
+            <h6>Numero de Placa</h6>
+            <h6>Numero de Serial</h6>
+            <h6>Marca</h6>
+            <h6>Nombre del Elemento</h6>
+            <h6>Fecha de Ingreso</h6>
+
 
         </div>
-        <footer class="footer">
+
+        <asp:GridView ID="GvDatos" runat="server" AutoGenerateColumns="False" DataKeyNames="IdElemento" >
+                <Columns>
+                    <asp:BoundField DataField="IdElemento" HeaderText="Id Elemento" />
+                    <asp:BoundField DataField="NumeroPlaca" HeaderText="Numero Placa" />
+                    <asp:BoundField DataField="NumeroSerial" HeaderText="Numero Serial" />
+                    <asp:BoundField DataField="Marca" HeaderText="Marca" />
+                    <asp:BoundField DataField="Modelo" HeaderText="Modelo" />
+                    <asp:BoundField DataField="Descripcion" HeaderText="Descripción" />
+                    <asp:TemplateField HeaderText="Eliminar">
+                         <ItemTemplate>
+                        <asp:LinkButton ID="LinkButton1" runat="server" Text="Eliminar" CausesValidation="False" CommandName="Delete"></asp:LinkButton>
+                    </ItemTemplate>
+                       
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
+    </div>
+         <p>
+            <asp:Label ID = "mensaje" runat = "server"></asp:Label>
+        </p>
+
+        <footer clas1s="footer">
             <div class="container">
                 <h2>Sena  ©2016  ADSI Ficha 908163  Instructor Jesus Rubio  </h2>
             </div>
         </footer>
 </asp:Content>
+

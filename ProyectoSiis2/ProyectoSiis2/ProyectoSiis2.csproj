@@ -94,6 +94,7 @@
     <Content Include="Imagenes\usuario.png" />
     <Content Include="ingreso.aspx" />
     <Content Include="Ingreso2.aspx" />
+    <Content Include="IngresoELemento.aspx" />
     <Content Include="packages.config" />
     <Content Include="PaginaMaestra.Master" />
     <Content Include="App_Themes\Tema1\bootstrap-theme.css.map" />
@@ -165,6 +166,13 @@
     </Compile>
     <Compile Include="Ingreso2.aspx.designer.cs">
       <DependentUpon>Ingreso2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoELemento.aspx.cs">
+      <DependentUpon>IngresoELemento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IngresoELemento.aspx.designer.cs">
+      <DependentUpon>IngresoELemento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
