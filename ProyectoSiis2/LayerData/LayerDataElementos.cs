@@ -10,8 +10,8 @@ namespace LayerData
 {
     public class LayerDataElementos
     {
-        public string strconn = @"Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID=Siis@proyectosiis;Password={123456789Aa];Trusted_Connection=False;Encrypt=True;Connection Timeout=30;";
-
+        public string strconn = @"Data Source=RICARD-PC;Initial Catalog=Proyecto1;Integrated Security=True";
+        //Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID = Siis@proyectosiis;Password={123456789Aa];Trusted_Connection=False;Encrypt=True;Connection Timeout = 30;
         public LayerDataElementos() { }
 
         public int InsertarElementos(Int64 IdElemento, Int64 NumeroPlaca, Int64 NumeroSerial, string Marca, string Modelo, string Descripcion)
@@ -203,7 +203,7 @@ namespace LayerData
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
                 cnx.Open();
-                SqlDataAdapter ObjMostrar = new SqlDataAdapter("SpPrestamo", cnx);
+                SqlDataAdapter ObjMostrar = new SqlDataAdapter("SpInsertarPrestamo", cnx);
                 ObjMostrar.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataSet ds = new DataSet();
                 try

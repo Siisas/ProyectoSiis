@@ -25,14 +25,21 @@
 
                         <asp:ContentPlaceHolder ID="ContenidoBanner" runat="server">
                             
+
+
+
                         </asp:ContentPlaceHolder>
 
                     </div>
 
 
-                    <div id="cuerpo">
+                    <div id="cuerpos">
                         <asp:ContentPlaceHolder ID="ContenidoCuerpo" runat="server">
-                        
+                   
+                            
+                            
+                            
+                                 
                         </asp:ContentPlaceHolder>
                         <ul><a href="Home.aspx">Home</a></ul>
 

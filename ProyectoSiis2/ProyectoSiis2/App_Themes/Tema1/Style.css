@@ -23,7 +23,7 @@ h2 {
     margin: auto;
     width: 95%;
     height: 655px;
-    background-color: red;
+    background-attachment:fixed;
     Border: 2px solid #000000;
 }
 
@@ -53,8 +53,9 @@ h2 {
 #cuerpo {
     position: absolute;
     background-color: #D6CFCF;
-    width: 95%;
+    width: 94.4%;
     height: 68.7%;
+    margin-top:5px;
 }
 /*Pagina Home*/
 
@@ -316,6 +317,12 @@ h2 {
 
 
 /*General el parrafo ubicado en el banner*/
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+
 p {
     text-align: center;
     color: white;
@@ -342,5 +349,6 @@ p {
 
     #cuerpo {
         height: 70.5%;
+        background-color:#5eb319;
     }
 }

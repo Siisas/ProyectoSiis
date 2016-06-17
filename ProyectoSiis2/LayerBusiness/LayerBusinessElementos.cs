@@ -119,26 +119,23 @@ namespace LayerBusiness
 
 
 
-       //mostrar Prestamo
+        //mostrar Prestamo
 
-          public DataTable Prestamo()
+       
+        public int Prestamo(Int64 IdElemento, Int64 NumeroPlaca, Int64 NumeroSerial, string Marca, string Modelo, string Descripcion)
         {
             try
             {
-                return ObjBS.Prestamo();
+                return ObjBS.InsertarElementos(IdElemento, NumeroPlaca, NumeroSerial, Marca, Modelo, Descripcion);
             }
-
             catch (Exception)
             {
                 throw;
             }
-
             finally
             {
                 ObjBS = null;
             }
-
         }
-
     }
 }

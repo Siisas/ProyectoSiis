@@ -23,7 +23,7 @@ namespace ProyectoSiis2
             LayerBusiness.LayerBusinessElementos OBj = new LayerBusiness.LayerBusinessElementos();
             GvDatos.DataSource = OBj.MostrarElementos();
             GvDatos.DataBind();
-            
+
         }
         protected void GvDatos_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
