@@ -121,6 +121,24 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.TextBox TxtFecha_Ingreso;
         
         /// <summary>
+        /// ImagenCal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImagenCal;
+        
+        /// <summary>
+        /// CalendarIng control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar CalendarIng;
+        
+        /// <summary>
         /// Label9 control.
         /// </summary>
         /// <remarks>

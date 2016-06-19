@@ -11,10 +11,37 @@ namespace ProyectoSiis2
     {
         LayerBusiness.LayerBusinessElementos oLB = new LayerBusiness.LayerBusinessElementos();
         protected void Page_Load(object sender, EventArgs e)
+        
+            {
+
+                if (!IsPostBack)
+                {
+                    CalendarIng.Visible = false;
+                }
+
+            }
+
+
+      
+
+        protected void ImagenCal_Click(object sender, ImageClickEventArgs e)
         {
-
-
+            if (CalendarIng.Visible)
+            {
+                CalendarIng.Visible = false;
+            }
+            else
+            {
+                CalendarIng.Visible = true;
+            }
         }
+
+        protected void CalendarIng_SelectionChanged(object sender, EventArgs e)
+        {
+            TxtFecha_Ingreso.Text = CalendarIng.SelectedDate.ToShortDateString();
+            CalendarIng.Visible = false;
+        }
+
         protected void BtnGuardar_Click(object sender, EventArgs e)
         {
 
@@ -26,7 +53,7 @@ namespace ProyectoSiis2
             {
                 try
                 {
-                    oLB.SpInsertarElemento1(TxtIdElemento.Text, TxtNumeroPlaca.Text, TxtNumeroSerial.Text, TxtMarca.Text, TxtModelo.Text,DateTime.Parse(TxtFecha_Ingreso.Text), TxtNombreElemento.Text, TxtCategoria.Text, TxtEstado.Text);
+                    oLB.SpInsertarElemento1(TxtIdElemento.Text, TxtNumeroPlaca.Text, TxtNumeroSerial.Text, TxtMarca.Text, TxtModelo.Text, Convert.ToDateTime(TxtFecha_Ingreso.Text), TxtNombreElemento.Text, TxtCategoria.Text, TxtEstado.Text);
                     mensaje.Text = "Empleado Insertado";
                 }
                 catch (Exception exc)
@@ -42,6 +69,5 @@ namespace ProyectoSiis2
 
             }
         }
-
     }
 }
