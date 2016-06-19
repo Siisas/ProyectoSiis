@@ -11,8 +11,6 @@ namespace LayerData
     public class LayerDataElementos
     {
         public string strconn = @"Data Source=RICARD-PC;Initial Catalog=ProyectoSiis;Integrated Security=True";
-        //Data Source = GALEX; Initial Catalog = pruebaspro1; Integrated Security = True
-        //Data Source = RICARD - PC; Initial Catalog = ProyectoSiis; Integrated Security = True
         //Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID = Siis@proyectosiis;Password={123456789Aa];Trusted_Connection=False;Encrypt=True;Connection Timeout = 30;
         public LayerDataElementos() { }
 
@@ -77,7 +75,7 @@ namespace LayerData
                 }
             }
         }
-        public int SpEditarElemento(string IdElemento, string NumeroPlaca, string NumeroSerial, string Marca, string Modelo, DateTime FechaIngreso, string NombreElemento)
+        public int SpEditarElemento(Int64 IdElemento, Int64 NumeroPlaca, Int64 NumeroSerial, string Marca, string Modelo, DateTime FechaIngreso, string NombreElemento)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {

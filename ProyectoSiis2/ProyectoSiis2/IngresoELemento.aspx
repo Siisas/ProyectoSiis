@@ -160,19 +160,7 @@
                             <asp:Label ID="Label6" runat="server" Text="Fecha de Ingreso"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TxtFecha_Ingreso" runat="server" Height="23px"></asp:TextBox>
-                            <asp:ImageButton ID="ImagenCal" runat="server" Height="27px" ImageUrl="~/Imagenes/calendar.jpg" Width="33px" OnClick="ImagenCal_Click" />
-                            <br />
-                            <asp:Calendar ID="CalendarIng" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px" OnSelectionChanged="CalendarIng_SelectionChanged">
-                                <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
-                                <NextPrevStyle VerticalAlign="Bottom" />
-                                <OtherMonthDayStyle ForeColor="#808080" />
-                                <SelectedDayStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
-                                <SelectorStyle BackColor="#CCCCCC" />
-                                <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
-                                <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
-                                <WeekendDayStyle BackColor="#FFFFCC" />
-                            </asp:Calendar>
+                            <asp:TextBox ID="TxtFecha_Ingreso" runat="server"></asp:TextBox>
                         </td>
                     </tr>
 
