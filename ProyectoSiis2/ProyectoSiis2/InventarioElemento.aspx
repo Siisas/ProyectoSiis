@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="IngresoELemento.aspx.cs" Inherits="ProyectoSiis2.IngresoELemento" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="InventarioElemento.aspx.cs" Inherits="ProyectoSiis2.InventarioElemento" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContenidoBanner" runat="server">
-  <link href="../bootstrap.min.css" rel="stylesheet">
+ <link href="../bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -108,110 +108,25 @@
         --%>
 
         <div class="jumbotron">
-                                                <h1>Insertar Elemento </h1>
-                <table class="auto-style1">
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label1" runat="server" Text="Id Elemento"></asp:Label>
-                        </td>
-                        <td style="margin-left: 120px">
-                            <asp:TextBox ID="TxtIdElemento" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label2" runat="server" Text="Numero Placa"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtNumeroPlaca" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label3" runat="server" Text="Numero Serial"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtNumeroSerial" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label4" runat="server" Text="Marca"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtMarca" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label5" runat="server" Text="Modelo"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtModelo" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label6" runat="server" Text="Fecha de Ingreso"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtFecha_Ingreso" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label9" runat="server" Text="Nombre Elemento"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtNombreElemento" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-
-
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label7" runat="server" Text="Categoria_Id_Categoria"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtCategoria" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label8" runat="server" Text="Estado_Id_Estado"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtEstado" runat="server"></asp:TextBox>
-                        </td>
-                    </tr>
-
-
-
-                    <tr>
-                        <td class="auto-style2">&nbsp;</td>
-                        <td>
-                              <asp:Button ID = "BtnGuardar" runat = "server" Text = "Guardar" OnClick="BtnGuardar_Click"/>
-                            <asp:Button ID="BtnCancelar" runat="server" Text="Cancelar" />
-                        </td>
-                    </tr>
-                </table>
-                
-
-        
-            
-            <p>
-                <asp:Label ID="mensaje" runat="server"></asp:Label>
-            </p>
-
-
+      
+              
+              <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+                <Columns>
+                    <asp:BoundField DataField="Id_Elemento" HeaderText="Id Elemento" />
+                    <asp:BoundField DataField="N_placa" HeaderText="Numero Placa" />
+                    <asp:BoundField DataField="N_Serial" HeaderText="Numero Serial" />
+                    <asp:BoundField DataField="Marca" HeaderText="Marca" />
+                    <asp:BoundField DataField="Modelo" HeaderText="Modelo" />
+                    <asp:BoundField DataField="Fecha_Ingreso" HeaderText="Fecha de Ingreso" />
+                     <asp:BoundField DataField="Nombre_Elemento" HeaderText="Nombre del elemento" />
+                     <asp:BoundField DataField="Categoria_Id_Categoria" HeaderText="ID Categoria" />
+                     <asp:BoundField DataField="Estado_Id_Estado" HeaderText="IDEstado" />
+                </Columns>
+            </asp:GridView>
+    </div>
+         <p>
+            <asp:Label ID = "mensaje" runat = "server"></asp:Label>
+        </p>
 
         </div>
         <footer class="footer">

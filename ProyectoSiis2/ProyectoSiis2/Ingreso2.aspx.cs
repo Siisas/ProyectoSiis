@@ -23,7 +23,7 @@ namespace ProyectoSiis2
         public void LlenarDatos()
         {
             LayerBusiness.LayerBusinessElementos OBj = new LayerBusiness.LayerBusinessElementos();
-            GvDatos.DataSource = OBj.MostrarElementos();
+            GvDatos.DataSource = OBj.SpMostrarElemento();
             GvDatos.DataBind();
         }
         protected void GvDatos_RowDeleting(object sender, GridViewDeleteEventArgs e)
@@ -51,30 +51,30 @@ namespace ProyectoSiis2
     
 
     //Codigo behind del boton guardar de insertar
-    protected void BtnGuardar_Click(object sender, EventArgs e)
-        {
-            if (!Page.IsValid)
-            {
-                return;
-            }
-            else
-            {
-                try
-                {
-                    Obk.InsertarElementos(Convert.ToInt64(TxtIdElemento.Text), Convert.ToInt64(TxtNumeroPlaca.Text), Convert.ToInt64(TxtNumeroSerial.Text), TxtMarca.Text, TxtModelo.Text, TxtDescripcion.Text);
-                    mensaje.Text = "Elemento Insertado";
-                }
-                catch (Exception exc)
-                {
-                    mensaje.Text = exc.Message.ToString();
-                }
-                finally
-                {
-                    Obk = null;
+    //protected void BtnGuardar_Click(object sender, EventArgs e)
+    //    {
+    //        if (!Page.IsValid)
+    //        {
+    //            return;
+    //        }
+    //        else
+    //        {
+    //            try
+    //            {
+    //                Obk.iN(Convert.ToInt64(TxtIdElemento.Text), Convert.ToInt64(TxtNumeroPlaca.Text), Convert.ToInt64(TxtNumeroSerial.Text), TxtMarca.Text, TxtModelo.Text, TxtDescripcion.Text);
+    //                mensaje.Text = "Elemento Insertado";
+    //            }
+    //            catch (Exception exc)
+    //            {
+    //                mensaje.Text = exc.Message.ToString();
+    //            }
+    //            finally
+    //            {
+    //                Obk = null;
 
-                }
-            }
-        }
+    //            }
+    //        }
+    //    }
     }
 }
     

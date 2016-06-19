@@ -21,7 +21,7 @@ namespace ProyectoSiis2
         public void LlenarDatos()
         {
             LayerBusiness.LayerBusinessElementos OBj = new LayerBusiness.LayerBusinessElementos();
-            GvDatos.DataSource = OBj.MostrarElementos();
+            GvDatos.DataSource = OBj.SpMostrarElemento();
             GvDatos.DataBind();
 
         }

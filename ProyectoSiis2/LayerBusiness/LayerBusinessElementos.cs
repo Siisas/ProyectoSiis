@@ -10,11 +10,11 @@ namespace LayerBusiness
     public class LayerBusinessElementos
     {
         LayerData.LayerDataElementos ObjBS = new LayerData.LayerDataElementos();
-        public int InsertarElementos(Int64 IdElemento, Int64 NumeroPlaca, Int64 NumeroSerial, string Marca, string Modelo, string Descripcion)
+        public int SpInsertarElemento1(string Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, DateTime Fecha_Ingreso, string Nombre_Elemento, string Categoria_Id_Categoria, string Estado_Id_Estado)
         {
             try
             {
-                return ObjBS.InsertarElementos(IdElemento, NumeroPlaca, NumeroSerial, Marca, Modelo, Descripcion);
+                return ObjBS.SpInsertarElemento1(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Fecha_Ingreso, Nombre_Elemento, Categoria_Id_Categoria, Estado_Id_Estado);
             }
             catch (Exception)
             {
@@ -27,11 +27,11 @@ namespace LayerBusiness
         }
 
 
-        public DataTable MostrarElementos()
+        public DataTable SpMostrarElemento()
         {
             try
             {
-                return ObjBS.MostrarElementos();
+                return ObjBS.SpMostrarElemento();
             }
 
             catch (Exception)
@@ -45,11 +45,11 @@ namespace LayerBusiness
             }
 
         }
-        public int EditarElementos(Int64 IdElemento, Int64 NumeroPlaca, Int64 NumeroSerial, string Marca, string Modelo, string Descripcion)
+        public int EditarElementos(Int64 IdElemento, Int64 NumeroPlaca, Int64 NumeroSerial, string Marca, string Modelo, DateTime FechaIngreso, string NombreElemento)
         {
             try
             {
-                return ObjBS.EditarElementos(IdElemento, NumeroPlaca, NumeroSerial, Marca, Modelo, Descripcion);
+                return ObjBS.SpEditarElemento(IdElemento, NumeroPlaca, NumeroSerial, Marca, Modelo, FechaIngreso,NombreElemento);
             }
             catch (Exception)
             {
@@ -65,7 +65,7 @@ namespace LayerBusiness
         {
             try
             {
-                return ObjBS.EliminarElemento(IdElemento);
+                return ObjBS.SpEliminarElemento(IdElemento);
             }
 
             catch (Exception)
@@ -122,11 +122,11 @@ namespace LayerBusiness
         //mostrar Prestamo
 
        
-        public int Prestamo(Int64 IdElemento, Int64 NumeroPlaca, Int64 NumeroSerial, string Marca, string Modelo, string Descripcion)
+        public int Prestamo(String IdElemento, string NumeroPlaca, string NumeroSerial, string Marca, string Modelo, DateTime FechaIngreso, string NombreElemento, string Categoria_Id_Categoria, string Estado_Id_Estado)
         {
             try
             {
-                return ObjBS.InsertarElementos(IdElemento, NumeroPlaca, NumeroSerial, Marca, Modelo, Descripcion);
+                return ObjBS.SpInsertarElemento1(IdElemento, NumeroPlaca, NumeroSerial, Marca, Modelo, FechaIngreso,NombreElemento,Categoria_Id_Categoria,Estado_Id_Estado);
             }
             catch (Exception)
             {

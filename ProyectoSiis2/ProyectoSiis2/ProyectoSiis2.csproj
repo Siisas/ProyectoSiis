@@ -95,6 +95,7 @@
     <Content Include="ingreso.aspx" />
     <Content Include="Ingreso2.aspx" />
     <Content Include="IngresoELemento.aspx" />
+    <Content Include="InventarioElemento.aspx" />
     <Content Include="packages.config" />
     <Content Include="PaginaMaestra.Master" />
     <Content Include="App_Themes\Tema1\bootstrap-theme.css.map" />
@@ -173,6 +174,13 @@
     </Compile>
     <Compile Include="IngresoELemento.aspx.designer.cs">
       <DependentUpon>IngresoELemento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventarioElemento.aspx.cs">
+      <DependentUpon>InventarioElemento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventarioElemento.aspx.designer.cs">
+      <DependentUpon>InventarioElemento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
