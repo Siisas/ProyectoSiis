@@ -78,6 +78,7 @@
     <Content Include="default.aspx" />
     <Content Include="dropDownList.aspx" />
     <Content Include="Gestion.aspx" />
+    <Content Include="Imagenes\calendar.jpg" />
     <Content Include="Imagenes\devolucion.JPG" />
     <Content Include="Imagenes\favicon.ico" />
     <Content Include="Imagenes\faviconn.ico" />

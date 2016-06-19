@@ -45,7 +45,7 @@ namespace LayerBusiness
             }
 
         }
-        public int EditarElementos(Int64 IdElemento, Int64 NumeroPlaca, Int64 NumeroSerial, string Marca, string Modelo, DateTime FechaIngreso, string NombreElemento)
+        public int EditarElementos(string IdElemento, string NumeroPlaca, string NumeroSerial, string Marca, string Modelo, DateTime FechaIngreso, string NombreElemento)
         {
             try
             {
