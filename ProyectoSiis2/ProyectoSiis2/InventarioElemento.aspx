@@ -110,7 +110,8 @@
         <div class="jumbotron">
       
               
-              <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+              <asp:GridView ID="GridView1" class="grilla" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+                  <AlternatingRowStyle BackColor="#CCCCCC" />
                 <Columns>
                     <asp:BoundField DataField="Id_Elemento" HeaderText="Id Elemento" />
                     <asp:BoundField DataField="N_placa" HeaderText="Numero Placa" />
@@ -122,12 +123,22 @@
                      <asp:BoundField DataField="Categoria_Id_Categoria" HeaderText="ID Categoria" />
                      <asp:BoundField DataField="Estado_Id_Estado" HeaderText="IDEstado" />
                 </Columns>
+                  <FooterStyle BackColor="#CCCCCC" />
+                  <HeaderStyle BackColor="#5eb319" Font-Bold="True" ForeColor="Black" />
+                  <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Right" Width="40px" />
+                  <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                  <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                  <SortedAscendingHeaderStyle BackColor="#808080" />
+                  <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                  <SortedDescendingHeaderStyle BackColor="#383838" />
+                  
             </asp:GridView>
     </div>
          <p>
             <asp:Label ID = "mensaje" runat = "server"></asp:Label>
         </p>
-
+              <asp:Button ID = "BtnMostrar" runat = "server" Text = "Mostrar" OnClick="BtnMostrar_Click"/>
+ 
         </div>
         <footer class="footer">
             <div class="container">

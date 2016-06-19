@@ -193,7 +193,7 @@
                         </td>
                     </tr>
 
-
+                    <asp:DropDownList ID="DropDownList1"  DataTextField="TxtEstado"  values="Nombre" DataValueField="Nombre"  runat="server"></asp:DropDownList>
 
                     <tr>
                         <td class="auto-style2">&nbsp;</td>
