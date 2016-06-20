@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace ProyectoSiis2
-    {
+{
 
     public partial class InventarioElemento : System.Web.UI.Page
     {
@@ -27,7 +27,7 @@ namespace ProyectoSiis2
                 try
                 {
 
-                    GridView1.DataSource = oLB.MostrarReserva();
+                    GridView1.DataSource = oLB.SpMostrarElemento();
                     GridView1.DataBind();
 
                 }
@@ -42,44 +42,38 @@ namespace ProyectoSiis2
 
 
 
-            }
-
-
-
-
-
-
-
-        }
-
-        protected void BtnMostrarReserva_Click(object sender, EventArgs e)
-        {
-            if (!Page.IsValid)
-            {
-                LlenarDatos();
-            }
-
-            else
-            {
-                try
-                {
-
-                    GridView2.DataSource = oLB.MostrarReserva();
-                    GridView2.DataBind();
-
-                }
-                catch (Exception exc)
-                {
-                    mensaje.Text = exc.Message.ToString();
-                }
-                finally
-                {
-                    oLB = null;
-                }
-
 
 
             }
+
+            //protected void BtnMostrarReserva_Click(object sender, EventArgs e)
+            //{
+            //    if (!Page.IsValid)
+            //    {
+            //        LlenarDatos();
+            //    }
+
+            //    else
+            //    {
+            //        try
+            //        {
+
+            //            GridView2.DataSource = oLB.MostrarReserva();
+            //            GridView2.DataBind();
+
+            //        }
+            //        catch (Exception exc)
+            //        {
+            //            mensaje.Text = exc.Message.ToString();
+            //        }
+            //        finally
+            //        {
+            //            oLB = null;
+            //        }
+
+
+
+            //    }
 
 
 
