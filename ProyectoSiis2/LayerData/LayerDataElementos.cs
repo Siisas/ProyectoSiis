@@ -10,8 +10,9 @@ namespace LayerData
 {
     public class LayerDataElementos
     {
-        public string strconn = @"Data Source=GALEX;Initial Catalog=pruebaspro1;Integrated Security=True";
-        //Data Source=RICARD-PC;Initial Catalog=ProyectoSiis;Integrated Security=True
+        public string strconn = @"Data Source=RICARD-PC;Initial Catalog=ProyectoSiis;Integrated Security=True";
+        //Data Source = GALEX; Initial Catalog = pruebaspro1; Integrated Security = True
+        //
         //Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID = Siis@proyectosiis;Password={123456789Aa];Trusted_Connection=False;Encrypt=True;Connection Timeout = 30;
         public LayerDataElementos() { }
         //prueba

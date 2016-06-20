@@ -10,13 +10,13 @@ namespace LayerBusiness
     public class LayerBusinessElementos
     {
         LayerData.LayerDataElementos ObjBS = new LayerData.LayerDataElementos();
-        public int SpInsertarElemento1(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Nombre_Elemento, string Estado_Id_Estado )
+        public int SpInsertarElemento1(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
 
 
         {
             try
             {
-                return ObjBS.SpInsertarElemento1(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Categoria_Id_Categoria, Fecha_Ingreso, Nombre_Elemento,  Estado_Id_Estado);
+                return ObjBS.SpInsertarElemento1(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Categoria_Id_Categoria, Fecha_Ingreso, Estado_Id_Estado, Nombre_Elemento);
             }
             catch (Exception)
             {

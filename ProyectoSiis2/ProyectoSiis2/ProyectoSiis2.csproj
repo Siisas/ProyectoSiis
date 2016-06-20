@@ -75,9 +75,6 @@
     <Content Include="App_Themes\Tema1\bootstrap.js" />
     <Content Include="App_Themes\Tema1\bootstrap.min.js" />
     <Content Include="App_Themes\Tema1\npm.js" />
-    <Content Include="default.aspx" />
-    <Content Include="dropDownList.aspx" />
-    <Content Include="Gestion.aspx" />
     <Content Include="Imagenes\calendar.jpg" />
     <Content Include="Imagenes\devolucion.JPG" />
     <Content Include="Imagenes\favicon.ico" />
@@ -93,8 +90,6 @@
     <Content Include="Imagenes\sena.png" />
     <Content Include="Imagenes\trazabilidad.JPG" />
     <Content Include="Imagenes\usuario.png" />
-    <Content Include="ingreso.aspx" />
-    <Content Include="Ingreso2.aspx" />
     <Content Include="IngresoELemento.aspx" />
     <Content Include="InventarioElemento.aspx" />
     <Content Include="packages.config" />
@@ -121,53 +116,16 @@
     <Content Include="App_Themes\Tema1\Style.css" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="Prestamo.aspx" />
-    <Content Include="Reserva.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebMestra.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="dropDownList.aspx.cs">
-      <DependentUpon>dropDownList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="dropDownList.aspx.designer.cs">
-      <DependentUpon>dropDownList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Gestion.aspx.cs">
-      <DependentUpon>Gestion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Gestion.aspx.designer.cs">
-      <DependentUpon>Gestion.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ingreso.aspx.cs">
-      <DependentUpon>ingreso.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ingreso.aspx.designer.cs">
-      <DependentUpon>ingreso.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Ingreso2.aspx.cs">
-      <DependentUpon>Ingreso2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Ingreso2.aspx.designer.cs">
-      <DependentUpon>Ingreso2.aspx</DependentUpon>
     </Compile>
     <Compile Include="IngresoELemento.aspx.cs">
       <DependentUpon>IngresoELemento.aspx</DependentUpon>
@@ -197,21 +155,7 @@
     <Compile Include="PaginaMaestra.Master.designer.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
     </Compile>
-    <Compile Include="Prestamo.aspx.cs">
-      <DependentUpon>Prestamo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Prestamo.aspx.designer.cs">
-      <DependentUpon>Prestamo.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reserva.aspx.cs">
-      <DependentUpon>Reserva.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Reserva.aspx.designer.cs">
-      <DependentUpon>Reserva.aspx</DependentUpon>
-    </Compile>
     <Compile Include="WebMestra.aspx.cs">
       <DependentUpon>WebMestra.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
