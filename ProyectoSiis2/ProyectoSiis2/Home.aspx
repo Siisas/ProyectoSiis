@@ -36,7 +36,7 @@
                     <li><a href="IngresoELemento.aspx">Ingreso Elemento</a></li>
                     <li><a href="#">Prestamo</a></li>
                     <li><a href="#">Devolución</a></li>
-                    <li><a href="#">Reservas</a></li>
+                    <li><a href="ReservaElemento.aspx">Reservas</a></li>
                     <li><a href="InventarioElemento.aspx">Inventarios</a></li>
                 </ul>
             </nav>
