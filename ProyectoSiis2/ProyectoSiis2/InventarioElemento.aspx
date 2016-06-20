@@ -123,7 +123,8 @@
                      <asp:BoundField DataField="Categoria_Id_Categoria" HeaderText="ID Categoria" />
                      <asp:BoundField DataField="Estado_Id_Estado" HeaderText="IDEstado" />
                 </Columns>
-                  <FooterStyle BackColor="#CCCCCC" />
+                  <FooterStyle BackColor="
+                      " />
                   <HeaderStyle BackColor="#5eb319" Font-Bold="True" ForeColor="Black" />
                   <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Right" Width="40px" />
                   <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />

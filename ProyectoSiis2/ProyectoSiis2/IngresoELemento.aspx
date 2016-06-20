@@ -108,13 +108,12 @@
         --%>
 
         <div class="jumbotron">
-                                                <h1>Insertar Elemento </h1>
-                <table class="auto-style1">
+                    <table class="auto-style1">
                     <tr>
                         <td class="auto-style2">
                             <asp:Label ID="Label1" runat="server" Text="Id Elemento"></asp:Label>
                         </td>
-                        <td style="margin-left: 120px">
+                        <td style="margin-left: 190px">
                             <asp:TextBox ID="TxtIdElemento" runat="server"></asp:TextBox>
                         </td>
                     </tr>
@@ -195,7 +194,8 @@
                         </td>
                     </tr>
 
-                    <asp:DropDownList ID="DropDownList1"  DataTextField="TxtEstado"  values="Nombre" DataValueField="Nombre"  runat="server"></asp:DropDownList>
+                    
+
 
                     <tr>
                         <td class="auto-style2">&nbsp;</td>
