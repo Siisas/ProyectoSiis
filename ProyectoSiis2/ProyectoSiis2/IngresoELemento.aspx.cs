@@ -24,7 +24,7 @@ namespace ProyectoSiis2
 
       
 
-        protected void ImagenCal_Click(object sender, ImageClickEventArgs e)
+        protected void ImagenCal_Click(object sender, ImageClickEventArgs e)//imagen decalendario
         {
             if (CalendarIng.Visible)
             {
@@ -36,7 +36,7 @@ namespace ProyectoSiis2
             }
         }
 
-        protected void CalendarIng_SelectionChanged(object sender, EventArgs e)
+        protected void CalendarIng_SelectionChanged(object sender, EventArgs e)//asignandole a la casilla txt fecha lo q se escoge en calendario 
         {
             TxtFecha_Ingreso.Text = CalendarIng.SelectedDate.ToShortDateString();
             CalendarIng.Visible = false;
