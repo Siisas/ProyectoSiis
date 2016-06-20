@@ -41,8 +41,7 @@
                             
                                  
                         </asp:ContentPlaceHolder>
-                        <ul><a href="Home.aspx">Home</a></ul>
-
+                        
                          
                     </div>
                 </div>
