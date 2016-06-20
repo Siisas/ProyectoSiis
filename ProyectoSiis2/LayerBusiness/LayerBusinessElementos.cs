@@ -10,11 +10,13 @@ namespace LayerBusiness
     public class LayerBusinessElementos
     {
         LayerData.LayerDataElementos ObjBS = new LayerData.LayerDataElementos();
-        public int SpInsertarElemento1(string Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, DateTime Fecha_Ingreso, string Nombre_Elemento, string Categoria_Id_Categoria, string Estado_Id_Estado)
+        public int SpInsertarElemento1(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Nombre_Elemento, string Estado_Id_Estado )
+
+
         {
             try
             {
-                return ObjBS.SpInsertarElemento1(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Fecha_Ingreso, Nombre_Elemento, Categoria_Id_Categoria, Estado_Id_Estado);
+                return ObjBS.SpInsertarElemento1(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Categoria_Id_Categoria, Fecha_Ingreso, Nombre_Elemento,  Estado_Id_Estado);
             }
             catch (Exception)
             {
@@ -45,11 +47,13 @@ namespace LayerBusiness
             }
 
         }
-        public int EditarElementos(string IdElemento, string NumeroPlaca, string NumeroSerial, string Marca, string Modelo, DateTime FechaIngreso, string NombreElemento)
+        public int EditarElementos(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
+
         {
             try
             {
-                return ObjBS.SpEditarElemento(IdElemento, NumeroPlaca, NumeroSerial, Marca, Modelo, FechaIngreso,NombreElemento);
+                return ObjBS.SpEditarElemento(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Categoria_Id_Categoria, Fecha_Ingreso, Nombre_Elemento, Estado_Id_Estado);
+
             }
             catch (Exception)
             {
@@ -122,11 +126,12 @@ namespace LayerBusiness
         //mostrar Prestamo
 
        
-        public int Prestamo(String IdElemento, string NumeroPlaca, string NumeroSerial, string Marca, string Modelo, DateTime FechaIngreso, string NombreElemento, string Categoria_Id_Categoria, string Estado_Id_Estado)
+        public int Prestamo(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
         {
             try
             {
-                return ObjBS.SpInsertarElemento1(IdElemento, NumeroPlaca, NumeroSerial, Marca, Modelo, FechaIngreso,NombreElemento,Categoria_Id_Categoria,Estado_Id_Estado);
+                return ObjBS.SpInsertarElemento1(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Categoria_Id_Categoria, Fecha_Ingreso, Nombre_Elemento, Estado_Id_Estado);
+
             }
             catch (Exception)
             {

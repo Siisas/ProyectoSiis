@@ -15,7 +15,7 @@ namespace LayerData
         //Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID = Siis@proyectosiis;Password={123456789Aa];Trusted_Connection=False;Encrypt=True;Connection Timeout = 30;
         public LayerDataElementos() { }
         //prueba
-        public int SpInsertarElemento1(string Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, DateTime Fecha_Ingreso, string Nombre_Elemento, string Categoria_Id_Categoria, string Estado_Id_Estado)
+        public int SpInsertarElemento1(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -23,16 +23,16 @@ namespace LayerData
                 SqlCommand OrdenSQL = new SqlCommand("SpInsertarElemento1", cnx);
                 OrdenSQL.CommandType = CommandType.StoredProcedure;
                 try
-                {   
+                {
                     OrdenSQL.Parameters.AddWithValue("@Id_Elemento", Id_Elemento);
                     OrdenSQL.Parameters.AddWithValue("@N_Placa", N_placa);
-                    OrdenSQL.Parameters.AddWithValue("@N_Serial",N_Serial);
+                    OrdenSQL.Parameters.AddWithValue("@N_Serial", N_Serial);
                     OrdenSQL.Parameters.AddWithValue("@Marca", Marca);
                     OrdenSQL.Parameters.AddWithValue("@Modelo", Modelo);
-                    OrdenSQL.Parameters.AddWithValue("@Fecha_Ingreso", Fecha_Ingreso);
-                    OrdenSQL.Parameters.AddWithValue("@Nombre_Elemento", Nombre_Elemento);
                     OrdenSQL.Parameters.AddWithValue("@Categoria_Id_Categoria", Categoria_Id_Categoria);
-                    OrdenSQL.Parameters.AddWithValue("@Estado_Id_Estado",Estado_Id_Estado);
+                    OrdenSQL.Parameters.AddWithValue("@Fecha_Ingreso", Fecha_Ingreso);
+                    OrdenSQL.Parameters.AddWithValue("@Estado_Id_Estado", Estado_Id_Estado);
+                    OrdenSQL.Parameters.AddWithValue("@Nombre_Elemento", Nombre_Elemento);
                     return OrdenSQL.ExecuteNonQuery();
                 }
                 catch (Exception)
@@ -76,7 +76,7 @@ namespace LayerData
                 }
             }
         }
-        public int SpEditarElemento(string IdElemento, string NumeroPlaca, string NumeroSerial, string Marca, string Modelo, DateTime FechaIngreso, string NombreElemento)
+        public int SpEditarElemento(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -87,13 +87,15 @@ namespace LayerData
 
                 try
                 {
-                    OrdenSQL.Parameters.AddWithValue("@Id_Elemento", IdElemento);
-                    OrdenSQL.Parameters.AddWithValue("@N_Placa", NumeroPlaca);
-                    OrdenSQL.Parameters.AddWithValue("@N_Serial", NumeroSerial);
+                    OrdenSQL.Parameters.AddWithValue("@Id_Elemento", Id_Elemento);
+                    OrdenSQL.Parameters.AddWithValue("@N_Placa", N_placa);
+                    OrdenSQL.Parameters.AddWithValue("@N_Serial", N_Serial);
                     OrdenSQL.Parameters.AddWithValue("@Marca", Marca);
                     OrdenSQL.Parameters.AddWithValue("@Modelo", Modelo);
-                    OrdenSQL.Parameters.AddWithValue("@Fecha_Ingreso", FechaIngreso);
-                    OrdenSQL.Parameters.AddWithValue("@Nombre_Elemento", NombreElemento);
+                    OrdenSQL.Parameters.AddWithValue("@Categoria_Id_Categoria", Categoria_Id_Categoria);
+                    OrdenSQL.Parameters.AddWithValue("@Fecha_Ingreso", Fecha_Ingreso);
+                    OrdenSQL.Parameters.AddWithValue("@Estado_Id_Estado", Estado_Id_Estado);
+                    OrdenSQL.Parameters.AddWithValue("@Nombre_Elemento", Nombre_Elemento);
                     return OrdenSQL.ExecuteNonQuery();
 
 

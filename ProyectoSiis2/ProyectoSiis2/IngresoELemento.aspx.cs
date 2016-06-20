@@ -24,7 +24,7 @@ namespace ProyectoSiis2
 
       
 
-        protected void ImagenCal_Click(object sender, ImageClickEventArgs e)//imagen decalendario  magenkk
+        protected void ImagenCal_Click(object sender, ImageClickEventArgs e)
         {
             if (CalendarIng.Visible)
             {
@@ -53,7 +53,7 @@ namespace ProyectoSiis2
             {
                 try
                 {
-                    oLB.SpInsertarElemento1(TxtIdElemento.Text, TxtNumeroPlaca.Text, TxtNumeroSerial.Text, TxtMarca.Text, TxtModelo.Text, Convert.ToDateTime(TxtFecha_Ingreso.Text), TxtNombreElemento.Text, TxtCategoria.Text, TxtEstado.Text);
+                    oLB.SpInsertarElemento1(Convert.ToInt64(TxtIdElemento.Text), TxtNumeroPlaca.Text, TxtNumeroSerial.Text, TxtMarca.Text, TxtModelo.Text, TxtCategoria.Text,Convert.ToDateTime(TxtFecha_Ingreso.Text), TxtEstado.Text, TxtNombreElemento.Text );
                     mensaje.Text = "Empleado Insertado";
                 }
                 catch (Exception exc)
