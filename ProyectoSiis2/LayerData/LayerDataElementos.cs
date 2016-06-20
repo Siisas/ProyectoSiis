@@ -14,7 +14,7 @@ namespace LayerData
         //Data Source=RICARD-PC;Initial Catalog=ProyectoSiis;Integrated Security=True
         //Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID = Siis@proyectosiis;Password={123456789Aa];Trusted_Connection=False;Encrypt=True;Connection Timeout = 30;
         public LayerDataElementos() { }
-
+        //prueba
         public int SpInsertarElemento1(string Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, DateTime Fecha_Ingreso, string Nombre_Elemento, string Categoria_Id_Categoria, string Estado_Id_Estado)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
