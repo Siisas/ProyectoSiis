@@ -4440,6 +4440,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .nav-justified {
     width: 106%;
+    height: 290px;
 }
 
     .nav-justified > li {
@@ -5363,7 +5364,7 @@ a.badge:focus, a.badge:hover {
     margin-bottom: 30px;
     color: inherit;
     background-color: #eee;
-    margin-top:0px;
+    margin-top:-243px;
     width:1294px;
     margin-left:-77px;
 }

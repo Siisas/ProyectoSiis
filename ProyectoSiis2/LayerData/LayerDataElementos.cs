@@ -144,7 +144,7 @@ namespace LayerData
 
 
         //LayerData de Reservas Para la Pagina reserva
-        public int InsertarReserva(Int64 Id, string NombreSolicitante, string ElementoAPrestar, DateTime FechaPrestao, string Observaciones, DateTime fechadevolucion)
+        public int InsertarReserva(string Id_Reserva, string Nombre_Solicitante, string Fk_Id_Elemento, DateTime Fecha_Reserva, string Observaciones, string Fk_Id_Categoria,string Fk_Id_Estado, string Reserva)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -154,12 +154,16 @@ namespace LayerData
 
                 try
                 {
-                    Ordensql.Parameters.AddWithValue("@IdReserva", Id);
-                    Ordensql.Parameters.AddWithValue("@NombreSolicitante", NombreSolicitante);
-                    Ordensql.Parameters.AddWithValue("@ElementoAPrestar", ElementoAPrestar);
-                    Ordensql.Parameters.AddWithValue("@FechaPrestamo", FechaPrestao);
+                    Ordensql.Parameters.AddWithValue("@Id_Reserva", Id_Reserva);
+                    Ordensql.Parameters.AddWithValue("@Nombre_Solicitante", Nombre_Solicitante);
+                    Ordensql.Parameters.AddWithValue("@Fk_Id_Elemento", Fk_Id_Elemento);
+                    Ordensql.Parameters.AddWithValue("@Fecha_Reserva", Fecha_Reserva);
                     Ordensql.Parameters.AddWithValue("@Observaciones", Observaciones);
-                    Ordensql.Parameters.AddWithValue("@fechaDevolucion", fechadevolucion);
+                    Ordensql.Parameters.AddWithValue("@Fk_Id_Categoria", Fk_Id_Categoria);
+                    Ordensql.Parameters.AddWithValue("@Fk_Id_Estado", Fk_Id_Estado);
+                    Ordensql.Parameters.AddWithValue("@Reserva", Reserva);
+
+
                     return Ordensql.ExecuteNonQuery();
                 }
                 catch (Exception)

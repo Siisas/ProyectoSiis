@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="IngresoELemento.aspx.cs" Inherits="ProyectoSiis2.IngresoELemento" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="ReservaElemento.aspx.cs" Inherits="ProyectoSiis2.ReservaElemento" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContenidoBanner" runat="server">
-  <link href="../bootstrap.min.css" rel="stylesheet">
+   <link href="../bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -32,8 +32,8 @@
             <nav>
                 <ul class="nav nav-justified">
                     <li class="active"><a href="Home.aspx"">Inicio</a></li>
-                    <li><a href="#">Ingreso Elemento</a></li>
-                    <li><a href="PrestamoElemento.aspx">Prestamo</a></li>
+                    <li><a href="IngresoELemento.aspx">Ingreso Elemento</a></li>
+                    <li><a href="#">Prestamo</a></li>
                     <li><a href="#">Devolución</a></li>
                     <li><a href="ReservaElemento.aspx">Reservas</a></li>
                     <li><a href="InventarioElemento.aspx">Inventarios</a></li>
@@ -108,80 +108,52 @@
         --%>
 
         <div class="jumbotron">
-                     <table class="auto-style1">
+          <table class="auto-style1">
                     <tr>
                         <td class="auto-style2" ">
-                            <asp:Label ID="Label1" runat="server" Text="Id Elemento"></asp:Label>
+                            <asp:Label ID="Label1" runat="server" Text="Id Reserva"></asp:Label>
                         </td>
                         <td style="margin-left: 190px">
-                            <asp:TextBox ID="TxtIdElemento" runat="server" Width="280px"></asp:TextBox>
+                            <asp:TextBox ID="TxtId_Reserva" runat="server" Width="280px"></asp:TextBox>
                         </td>
                     </tr>
 
                     <tr>
                         <td class="auto-style2">
-                            <asp:Label ID="Label2" runat="server" Text="Numero Placa"></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Text="Nombre del solicitante"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TxtNumeroPlaca" runat="server" Width="280px"></asp:TextBox>
+                            <asp:TextBox ID="TxtNombre_Solicitante" runat="server" Width="280px"></asp:TextBox>
                         </td>
                     </tr>
 
                     <tr>
                         <td class="auto-style2">
-                            <asp:Label ID="Label3" runat="server" Text="Numero Serial"></asp:Label>
+                            <asp:Label ID="Label3" runat="server" Text="Id Elemento"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TxtNumeroSerial" runat="server" Width="280px"></asp:TextBox>
+                            <asp:TextBox ID="TxtFk_Id_Elemento" runat="server" Width="280px"></asp:TextBox>
                         </td>
                     </tr>
 
                     <tr>
                         <td class="auto-style2">
-                            <asp:Label ID="Label4" runat="server" Text="Marca"></asp:Label>
+                            <asp:Label ID="Label4" runat="server" Text="Fecha de Reserva"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TxtMarca" runat="server" Width="280px"></asp:TextBox>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label5" runat="server" Text="Modelo"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtModelo" runat="server" Width="280px"></asp:TextBox>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label6" runat="server" Text="Fecha de Ingreso"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtFecha_Ingreso" runat="server" Width="280px" ></asp:TextBox>
+                            <asp:TextBox ID="TxtFecha_Reserva" runat="server" Width="280px"></asp:TextBox>                                                        
                             <asp:ImageButton ID="ImagenCal" runat="server" Height="32px" ImageUrl="~/Imagenes/calendar.jpg" Width="37px" OnClick="ImagenCal_Click"/>
                             <asp:Calendar ID="CalendarIng" runat="server"  OnSelectionChanged="CalendarIng_SelectionChanged"></asp:Calendar>
                         </td>
+                        
                     </tr>
 
                     <tr>
                         <td class="auto-style2">
-                            <asp:Label ID="Label9" runat="server" Text="Nombre Elemento"></asp:Label>
+                            <asp:Label ID="Label5" runat="server" Text="Observaciones"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TxtNombreElemento" runat="server" Width="280px" ></asp:TextBox>
-                        </td>
-                    </tr>
-
-
-
-                    <tr>
-                        <td class="auto-style2">
-                            <asp:Label ID="Label7" runat="server" Text="Categoria_Id_Categoria"></asp:Label>
-                        </td>
-                        <td>
-                            <asp:TextBox ID="TxtCategoria" runat="server" Width="280px"></asp:TextBox>
+                            <asp:TextBox ID="TxtObservaciones" runat="server" Width="280px" ></asp:TextBox>
                         </td>
                     </tr>
 
@@ -189,10 +161,32 @@
 
                     <tr>
                         <td class="auto-style2">
-                            <asp:Label ID="Label8" runat="server" Text="Estado_Id_Estado"></asp:Label>
+                            <asp:Label ID="Label9" runat="server" Text="Id Categoria"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="TxtEstado" runat="server" Width="280px" ></asp:TextBox>
+                            <asp:TextBox ID="TxtFk_Id_Categoria" runat="server" Width="280px" ></asp:TextBox>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td class="auto-style2">
+                            <asp:Label ID="Label7"  runat="server" Text="Id Estado" ></asp:Label>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="TxtFk_Id_Estado" runat="server" Width="280px"></asp:TextBox>
+                        </td>
+                    </tr>
+
+                  
+
+                    <tr>
+                        <td class="auto-style2">
+                            <asp:Label ID="Label8" runat="server" Text="Reserva"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="TxtReserva" runat="server" Width="280px"></asp:TextBox>
                         </td>
                     </tr>
 
@@ -213,12 +207,10 @@
     font-weight:bold;" runat="server"></asp:Label>
             </p>
 
-
-
         </div>
         <footer class="footer">
             <div class="container">
-                <h2>Sena  ©2016  ADSI Ficha 908163  Instructor Jesus Rubio  </h2>
+                <h2 class="txtFooter">Sena  ©2016  ADSI Ficha 908163  Instructor Jesus Rubio  </h2>
             </div>
         </footer>
 </asp:Content>

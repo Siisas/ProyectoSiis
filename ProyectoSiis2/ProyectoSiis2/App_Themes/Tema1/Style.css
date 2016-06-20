@@ -127,13 +127,11 @@ h2 {
 }
 
 .auto-style1 {
+    border: 10px ridge white;
     background-color: transparent;
     margin-left: 28%;
     font-size: 18px;
-    border-style: ridge;
-    border-color: white;
-    border-width: 10px;
-    width: 0px;
+    width: 509px;
 }
 
 Columns {

@@ -118,6 +118,7 @@
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="PrestamoElemento.aspx" />
+    <Content Include="ReservaElemento.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebMestra.aspx" />
   </ItemGroup>
@@ -165,6 +166,13 @@
       <DependentUpon>PrestamoElemento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservaElemento.aspx.cs">
+      <DependentUpon>ReservaElemento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReservaElemento.aspx.designer.cs">
+      <DependentUpon>ReservaElemento.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebMestra.aspx.cs">
       <DependentUpon>WebMestra.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

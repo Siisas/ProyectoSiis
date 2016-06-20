@@ -93,11 +93,11 @@ namespace LayerBusiness
 
 
         //Insertar reserva
-        public int InsertarReserva(Int64 Id, string NombreSolicitante, string ElementoAPrestar, DateTime FechaPrestao, string Observaciones, DateTime fechadevolucion)
+        public int InsertarReserva(string Id_Reserva, string Nombre_Solicitante, string Fk_Id_Elemento, DateTime Fecha_Reserva, string Observaciones, string Fk_Id_Categoria, string Fk_Id_Estado, string Reserva)
         {
             try
             {
-                return ObjBS.InsertarReserva(Id, NombreSolicitante, ElementoAPrestar, FechaPrestao, Observaciones, fechadevolucion);
+                return ObjBS.InsertarReserva(Id_Reserva, Nombre_Solicitante, Fk_Id_Elemento, Fecha_Reserva, Observaciones, Fk_Id_Categoria, Fk_Id_Estado, Reserva);
             }
             catch (Exception)
             {
