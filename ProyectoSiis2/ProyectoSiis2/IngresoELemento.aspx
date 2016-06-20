@@ -161,6 +161,8 @@
                         </td>
                         <td>
                             <asp:TextBox ID="TxtFecha_Ingreso" runat="server"></asp:TextBox>
+                            <asp:ImageButton ID="ImagenCal" runat="server" Height="32px" ImageUrl="~/Imagenes/calendar.jpg" Width="37px" OnClick="ImagenCal_Click"/>
+                            <asp:Calendar ID="CalendarIng" runat="server" OnSelectionChanged="CalendarIng_SelectionChanged"></asp:Calendar>
                         </td>
                     </tr>
 
