@@ -142,7 +142,7 @@
  
         <%--Grila con datos de la Reserva--%> 
               
-              <asp:GridView ID="GridView2" class="grilla" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+   <%--           <asp:GridView ID="GridView2" class="grilla" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
                   <AlternatingRowStyle BackColor="#CCCCCC" />
                 <Columns>
                     <asp:BoundField DataField="Id_Reserva" HeaderText="Id Reserva" />
@@ -171,7 +171,7 @@
             <asp:Label ID = "Label1" runat = "server"></asp:Label>
         </p>
               <asp:Button ID = "BtnMostrarReserva" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:8px; margin-left:40%;" runat = "server" Text = "Presiona aqui para ver el inventario" OnClick="BtnMostrar_Click"/>
- 
+ --%>
 
 
 
