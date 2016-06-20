@@ -111,11 +111,11 @@ namespace LayerBusiness
 
         //Mostrar Reserva
 
-        public DataTable MostarReserva()
+        public DataTable MostrarReserva()
         {
             try
             {
-                return ObjBS.MostarReserva();
+                return ObjBS.MostrarReserva();
             }
             catch (Exception)
             {

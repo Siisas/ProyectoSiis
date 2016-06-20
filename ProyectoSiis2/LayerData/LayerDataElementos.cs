@@ -10,9 +10,11 @@ namespace LayerData
 {
     public class LayerDataElementos
     {
-        public string strconn = @"Data Source=ufkadqmy3n.database.windows.net,1433;Initial Catalog=bdproyecto;Persist Security Info=True;User ID=pruebanomina;Password=AZUre2016";
+        public string strconn = @"Data Source = ufkadqmy3n.database.windows.net,1433; Initial Catalog = bdproyecto; Persist Security Info=True;User ID = pruebanomina; Password=AZUre2016";
+
+        //public string strconn = @"Data Source=RICARD-PC;Initial Catalog=ProyectoSiis;Integrated Security=True";
         //Data Source = GALEX; Initial Catalog = pruebaspro1; Integrated Security = True
-        //
+        
         //Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID = Siis@proyectosiis;Password={123456789Aa];Trusted_Connection=False;Encrypt=True;Connection Timeout = 30;
         public LayerDataElementos() { }
         //prueba
@@ -77,7 +79,7 @@ namespace LayerData
                 }
             }
         }
-        public int SpEditarElemento(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
+        public int SpEditarElemento(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, Int64 Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -144,7 +146,7 @@ namespace LayerData
 
 
         //LayerData de Reservas Para la Pagina reserva
-        public int InsertarReserva(string Id_Reserva, string Nombre_Solicitante, string Fk_Id_Elemento, DateTime Fecha_Reserva, string Observaciones, string Fk_Id_Categoria,string Fk_Id_Estado, string Reserva)
+        public int InsertarReserva(Int64 Id_Reserva, string Nombre_Solicitante, Int64 Fk_Id_Elemento, DateTime Fecha_Reserva, string Observaciones, Int64 Fk_Id_Categoria,Int64 Fk_Id_Estado, string Reserva)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -181,12 +183,12 @@ namespace LayerData
 
    //Mostrar Reserva para la pagina Gestion
 
-        public DataTable MostarReserva()
+        public DataTable MostrarReserva()
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
                 cnx.Open();
-                SqlDataAdapter dAd = new SqlDataAdapter("SpMostarReserva", cnx);
+                SqlDataAdapter dAd = new SqlDataAdapter("SpMostrarReserva", cnx);
                 dAd.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataSet ds = new DataSet();
 
