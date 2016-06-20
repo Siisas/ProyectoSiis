@@ -57,6 +57,27 @@ h2 {
     height: 68.7%;
     margin-top:5px;
 }
+
+
+.auto-style1 {
+
+background-color:blue;
+
+}
+Columns{
+
+
+    background-color:red;
+}
+
+GridView {
+
+background-color:black;
+
+}
+
+
+
 /*Pagina Home*/
 
 .ingreso {

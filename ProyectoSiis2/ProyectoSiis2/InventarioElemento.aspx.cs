@@ -12,18 +12,50 @@ namespace ProyectoSiis2
     {
         LayerBusiness.LayerBusinessElementos oLB = new LayerBusiness.LayerBusinessElementos();
         protected void Page_Load(object sender, EventArgs e)
+
+        { }
+
+        protected void BtnMostrar_Click(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (!Page.IsValid)
             {
                 LlenarDatos();
             }
+
+            else
+            {
+                try
+                {
+
+                    GridView1.DataSource = oLB.SpMostrarElemento();
+                    GridView1.DataBind();
+
+                }
+                catch (Exception exc)
+                {
+                    mensaje.Text = exc.Message.ToString();
+                }
+                finally
+                {
+                    oLB = null;
+                }
+
+
+
+            }
+
+
+
+
+
+
 
         }
 
         public void LlenarDatos()
         {
-            GridView1.DataSource = oLB.SpMostrarElemento();
-            GridView1.DataBind();
+            //GridView1.DataSource = oLB.SpMostrarElemento();
+            //GridView1.DataBind();
 
             ////En la busqueda debe aparecer los 2 id id
             //DropDownList1.DataSource = oLB.MostrarEmpleados();
