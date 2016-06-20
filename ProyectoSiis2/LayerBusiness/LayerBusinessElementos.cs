@@ -47,7 +47,7 @@ namespace LayerBusiness
             }
 
         }
-        public int EditarElementos(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
+        public int EditarElementos(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, Int64 Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
 
         {
             try
@@ -93,7 +93,7 @@ namespace LayerBusiness
 
 
         //Insertar reserva
-        public int InsertarReserva(string Id_Reserva, string Nombre_Solicitante, string Fk_Id_Elemento, DateTime Fecha_Reserva, string Observaciones, string Fk_Id_Categoria, string Fk_Id_Estado, string Reserva)
+        public int InsertarReserva(string Id_Reserva, string Nombre_Solicitante, Int64 Fk_Id_Elemento, DateTime Fecha_Reserva, string Observaciones, string Fk_Id_Categoria, string Fk_Id_Estado, string Reserva)
         {
             try
             {

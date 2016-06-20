@@ -49,7 +49,7 @@ namespace ProyectoSiis2
             {
                 try
                 {
-                    oLB.InsertarReserva(TxtId_Reserva.Text,TxtNombre_Solicitante.Text, TxtFk_Id_Elemento.Text, Convert.ToDateTime(TxtFecha_Reserva.Text), TxtObservaciones.Text, TxtFk_Id_Categoria.Text, TxtFk_Id_Estado.Text, TxtReserva.Text);
+                    oLB.InsertarReserva(TxtId_Reserva.Text,TxtNombre_Solicitante.Text, Convert.ToInt64(TxtFk_Id_Elemento.Text), Convert.ToDateTime(TxtFecha_Reserva.Text), TxtObservaciones.Text, TxtFk_Id_Categoria.Text, TxtFk_Id_Estado.Text, TxtReserva.Text);
                     mensaje.Text = "Reserva realizada con Exito";
                 }
                 catch (Exception exc)
