@@ -70,6 +70,7 @@
     <Content Include="App_Themes\Tema1\bootstrap-theme.min.css" />
     <Content Include="App_Themes\Tema1\bootstrap.css" />
     <Content Include="App_Themes\Tema1\bootstrap.min.css" />
+    <Content Include="App_Themes\Tema1\functionHome.js" />
     <Content Include="App_Themes\Tema1\navbar.css" />
     <Content Include="App_Themes\Tema1\glyphicons-halflings-regular.svg" />
     <Content Include="App_Themes\Tema1\bootstrap.js" />
@@ -116,6 +117,7 @@
     <Content Include="App_Themes\Tema1\Style.css" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="PrestamoElemento.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebMestra.aspx" />
   </ItemGroup>
@@ -154,6 +156,13 @@
     </Compile>
     <Compile Include="PaginaMaestra.Master.designer.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PrestamoElemento.aspx.cs">
+      <DependentUpon>PrestamoElemento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrestamoElemento.aspx.designer.cs">
+      <DependentUpon>PrestamoElemento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebMestra.aspx.cs">

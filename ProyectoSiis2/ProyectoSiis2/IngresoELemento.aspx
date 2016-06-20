@@ -33,7 +33,7 @@
                 <ul class="nav nav-justified">
                     <li class="active"><a href="Home.aspx"">Inicio</a></li>
                     <li><a href="#">Ingreso Elemento</a></li>
-                    <li><a href="#">Prestamos</a></li>
+                    <li><a href="#">Prestamo</a></li>
                     <li><a href="#">Devolución</a></li>
                     <li><a href="#">Reservas</a></li>
                     <li><a href="InventarioElemento.aspx">Inventarios</a></li>
@@ -110,7 +110,7 @@
         <div class="jumbotron">
                      <table class="auto-style1">
                     <tr>
-                        <td class="auto-style2">
+                        <td class="auto-style2" ">
                             <asp:Label ID="Label1" runat="server" Text="Id Elemento"></asp:Label>
                         </td>
                         <td style="margin-left: 190px">
@@ -185,6 +185,8 @@
                         </td>
                     </tr>
 
+                  
+
                     <tr>
                         <td class="auto-style2">
                             <asp:Label ID="Label8" runat="server" Text="Estado_Id_Estado"></asp:Label>
@@ -194,14 +196,11 @@
                         </td>
                     </tr>
 
-                    
-
-
                     <tr>
                         <td class="auto-style2">&nbsp;</td>
                         <td>
-                              <asp:Button ID = "BtnGuardar" runat = "server" Text = "Guardar" OnClick="BtnGuardar_Click"/>
-                            <asp:Button ID="BtnCancelar" runat="server" Text="Cancelar" />
+                              <asp:Button ID ="BtnGuardar" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:8px; margin-left:10px;" runat = "server" Text = "Guardar" OnClick="BtnGuardar_Click"/>
+                            <asp:Button ID="BtnCancelar" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:3px;margin-left:10px;" runat="server" Text="Cancelar" />
                         </td>
                     </tr>
                 </table>
@@ -210,7 +209,8 @@
         
             
             <p>
-                <asp:Label ID="mensaje" runat="server"></asp:Label>
+                <asp:Label ID="mensaje" Style="color:black;text-align:center;text-shadow:5px 5px 5px Gray;  text-align: center;
+    font-weight:bold;" runat="server"></asp:Label>
             </p>
 
 

@@ -65,6 +65,12 @@ namespace LayerBusiness
                 ObjBS = null;
             }
         }
+
+        public void SpInsertarElemento1(long v, string text1, string text2, string text3, string text4, string text5, DateTime dateTime, object text6, string text7)
+        {
+            throw new NotImplementedException();
+        }
+
         public int EliminarElemento(Int64 IdElemento)
         {
             try

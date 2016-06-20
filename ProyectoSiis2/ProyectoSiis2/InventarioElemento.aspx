@@ -138,7 +138,7 @@
          <p>
             <asp:Label ID = "mensaje" runat = "server"></asp:Label>
         </p>
-              <asp:Button ID = "BtnMostrar" runat = "server" Text = "Mostrar" OnClick="BtnMostrar_Click"/>
+              <asp:Button ID = "BtnMostrar" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:8px; margin-left:40%;" runat = "server" Text = "Presiona aqui para ver el inventario" OnClick="BtnMostrar_Click"/>
  
         </div>
         <footer class="footer">

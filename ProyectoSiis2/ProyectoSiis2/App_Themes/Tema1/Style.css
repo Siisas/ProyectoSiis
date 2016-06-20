@@ -2,10 +2,9 @@
     margin: 0%;
     padding: 0%;
 }
+
 a {
-
-    text-decoration:none;
-
+    text-decoration: none;
 }
 
 body {
@@ -14,16 +13,27 @@ body {
     overflow: hidden;
 }
 
-h2 {
-    text-align: center;
-    font-size: 20px;
+
+#txtFooter {
+
+    margin-top:-2px;
+
 }
+
+
+h2 {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    font-weight:bold;
+}
+
 
 #header {
     margin: auto;
     width: 95%;
     height: 655px;
-    background-attachment:fixed;
+    background-attachment: fixed;
     Border: 2px solid #000000;
 }
 
@@ -55,30 +65,83 @@ h2 {
     background-color: #D6CFCF;
     width: 94.4%;
     height: 68.7%;
-    margin-top:5px;
+    margin-top: 5px;
 }
 
+
+#BtnGuardar {
+    background-color: #5eb319;
+}
+
+/*VentanaModal*/
+
+#cerrarSesion {
+    background-color: #5eb319;
+    margin-left: 1070px;
+    width: px;
+    height: 30px;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: Arial;
+    position: absolute;
+    font-weight: bold;
+}
+
+    #cerrarSesion:hover {
+        background-color: black;
+        width: 200px;
+        height: 30px;
+    }
+
+
+.cerrar {
+    font-weight: 900;
+    margin-top: -20px;
+    margin-left: 230px;
+}
+
+    .cerrar a {
+        color: #5eb319;
+    }
+
+
+/*Cierro Ventana Prueba*/
+
+
+#cerrarSesion {
+    background-color: #5eb319;
+    margin-left: 1070px;
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: Arial;
+    position: absolute;
+    font-weight: bold;
+}
 
 .auto-style1 {
-
-background-color:transparent;
- margin-left: 28%;
- font-size: 18px;
- border-style: ridge;
-    border-color:white;
+    background-color: transparent;
+    margin-left: 28%;
+    font-size: 18px;
+    border-style: ridge;
+    border-color: white;
     border-width: 10px;
-    width:0px;
+    width: 0px;
 }
-Columns{
 
-
-    background-color:red;
+Columns {
+    background-color: red;
 }
 
 GridView {
-
-background-color:black;
-
+    background-color: black;
 }
 
 
@@ -221,7 +284,7 @@ background-color:black;
     background-color: #5eb319;
     width: 180px;
     height: 30px;
-    color:white;
+    color: white;
     font-size: 25px;
     text-align: center;
     border-radius: 5px;
@@ -229,10 +292,6 @@ background-color:black;
     margin-left: 870px;
     margin-top: -85px;
     font-weight: bold;
-    
-
-
-
 }
 
     .reservas:hover {
@@ -240,6 +299,7 @@ background-color:black;
         width: 200px;
         height: 30px;
     }
+
 
 .gestion {
     background-color: #5eb319;
@@ -323,20 +383,17 @@ background-color:black;
 }
 
 #ContenidoCuerpo_IniciarSesion {
-
-
-    background-color:#5eb319;
-	margin-left:41%;
-	margin-top: 2%;
-	width:200px;
-	height:30px;
-	color: white;
-	font-size:25px;
-	text-align:center;
-	border-radius: 5px;
-	font-family: Arial;
-	position:relative;
-	
+    background-color: #5eb319;
+    margin-left: 41%;
+    margin-top: 2%;
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Arial;
+    position: relative;
 }
 
 
@@ -345,7 +402,7 @@ background-color:black;
 /*General el parrafo ubicado en el banner*/
 
 .navbar {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -375,7 +432,13 @@ p {
 
     #cuerpo {
         height: 70.5%;
-     background-color:#5eb319;
-  
+        background-color: #5eb319;
     }
+    #txtFooter {
+    
+    text-align:left;
+    font-size:5px;
+    
+    }
+
 }

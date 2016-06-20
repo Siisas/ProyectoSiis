@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="ProyectoSiis2.Home" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="PrestamoElemento.aspx.cs" Inherits="ProyectoSiis2.PrestamoElemento" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContenidoBanner" runat="server">
@@ -109,14 +108,11 @@
         --%>
 
         <div class="jumbotron">
-            <h1>Bienvenidos al Sistema de Información</h1>
-            <h1>                 Inventarios Sena</h1>
-            <h1                     >Consultec</h1>
-
+            
         </div>
         <footer class="footer">
             <div class="container">
-                <h2 class="txtFooter">Sena  ©2016  ADSI Ficha 908163  Instructor Jesus Rubio  </h2>
+                <h2>Sena  ©2016  ADSI Ficha 908163  Instructor Jesus Rubio  </h2>
             </div>
         </footer>
 </asp:Content>
