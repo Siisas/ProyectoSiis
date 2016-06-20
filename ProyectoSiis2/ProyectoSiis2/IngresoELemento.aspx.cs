@@ -24,7 +24,7 @@ namespace ProyectoSiis2
 
       
 
-        protected void ImagenCal_Click(object sender, ImageClickEventArgs e)//imagen decalendario
+        protected void ImagenCal_Click(object sender, ImageClickEventArgs e)//imagen decalendario  magen
         {
             if (CalendarIng.Visible)
             {
