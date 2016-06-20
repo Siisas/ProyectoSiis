@@ -108,7 +108,7 @@
         --%>
 
         <div class="jumbotron">
-                    <table class="auto-style1">
+                     <table class="auto-style1">
                     <tr>
                         <td class="auto-style2">
                             <asp:Label ID="Label1" runat="server" Text="Id Elemento"></asp:Label>
@@ -161,7 +161,7 @@
                         <td>
                             <asp:TextBox ID="TxtFecha_Ingreso" runat="server"></asp:TextBox>
                             <asp:ImageButton ID="ImagenCal" runat="server" Height="32px" ImageUrl="~/Imagenes/calendar.jpg" Width="37px" OnClick="ImagenCal_Click"/>
-                            <asp:Calendar ID="CalendarIng" runat="server" OnSelectionChanged="CalendarIng_SelectionChanged"></asp:Calendar>
+                            <asp:Calendar ID="CalendarIng" runat="server"  OnSelectionChanged="CalendarIng_SelectionChanged"></asp:Calendar>
                         </td>
                     </tr>
 
