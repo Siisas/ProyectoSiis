@@ -36,7 +36,7 @@
                     <li><a href="#">Prestamos</a></li>
                     <li><a href="#">Devolución</a></li>
                     <li><a href="#">Reservas</a></li>
-                    <li><a href="#">Inventarios</a></li>
+                    <li><a href="InventarioElemento.aspx">Inventarios</a></li>
                 </ul>
             </nav>
         </div>
