@@ -78,6 +78,7 @@ h2 {
 .Imagenblog {
     margin-left:32px;
     width:1300px;
+    margin-top:61px;
 }
 
 #BtnGuardar {
@@ -422,7 +423,7 @@ p {
     font-family: Arial;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:768px) {
     .body {
         : 100%;
     }

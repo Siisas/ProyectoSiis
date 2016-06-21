@@ -155,7 +155,7 @@
                  <footer class="footer">
                      <link href="App_Themes/Tema1/sticky-footer-navbar.css" rel="stylesheet" />
       <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+            <p class="text-muted">Sena  ©2016  ADSI Ficha 908163  Instructor Jesus Rubio </p>
       </div>
     </footer>
                   
