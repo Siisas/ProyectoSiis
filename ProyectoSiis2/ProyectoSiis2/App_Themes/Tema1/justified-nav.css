@@ -48,7 +48,7 @@ body {
   background-color: #5eb319;
   background-image: none;
   color:white;
-  position:absolute;
+  
 }
 .nav-justified > li:first-child > a {
   border-radius: 5px 5px 0 0;
@@ -61,6 +61,7 @@ body {
 @media (min-width: 768px) {
   .nav-justified {
     max-height: 52px;
+    position:absolute;
   }
   .nav-justified > li > a {
     border-right: 1px solid #d5d5d5;
