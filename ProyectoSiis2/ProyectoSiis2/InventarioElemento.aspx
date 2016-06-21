@@ -19,8 +19,14 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+   <select name="TextCargoEmpleado" id="TextCargoEmpleado">
+	<option selected="selected" value=" "> </option>
+	<option value="10001">OPE. AUTOBOMBA</option>
+	<option value="10002">OPE. ESTACIONARIA</option>
+	<option value="10003">AUXILIAR  BOMBA</option>
+	<option value="10004">ADMINISTRADOR</option>
 
-
+</select>
 
 
     <div class="container">
