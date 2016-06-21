@@ -134,11 +134,7 @@
                         </td>
                     </tr>
 
-            <p>
-                <asp:Label ID="mensaje" Style="color:black;text-align:center;text-shadow:5px 5px 5px Gray;  text-align: center;
-    font-weight:bold;" runat="server"></asp:Label>
-            </p>
-
+    
                 
                                   
             </tbody>
@@ -146,7 +142,11 @@
         </div>
       </div>
           
-  
+          <p>
+                <asp:Label ID="mensaje" Style="color:black;text-align:center;text-shadow:5px 5px 5px Gray;  text-align: center;
+    font-weight:bold;" runat="server"></asp:Label>
+            </p>
+
    
 </asp:Content>
 
