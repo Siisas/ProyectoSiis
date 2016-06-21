@@ -126,6 +126,13 @@
                             <asp:TextBox ID="TxtEstado" runat="server" Width="280px" ></asp:TextBox>
                         </td>
                     </tr>
+                <tr>
+                        <td class="auto-style2">&nbsp;</td>
+                        <td>
+                              <asp:Button ID ="Button1" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:8px; margin-left:10px;" runat = "server" Text = "Guardar" OnClick="BtnGuardar_Click"/>
+                            <asp:Button ID="Button2" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:3px;margin-left:10px;" runat="server" Text="Cancelar" />
+                        </td>
+                    </tr>
 
     
                 
@@ -134,14 +141,7 @@
           </table>
         </div>
       </div>
-          <tr>
-                        <td class="auto-style2">&nbsp;</td>
-                        <td>
-                              <asp:Button ID ="Button1" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:8px; margin-left:10px;" runat = "server" Text = "Guardar" OnClick="BtnGuardar_Click"/>
-                            <asp:Button ID="Button2" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:3px;margin-left:10px;" runat="server" Text="Cancelar" />
-                        </td>
-                    </tr>
-
+          
           
           <p>
                 <asp:Label ID="mensaje" Style="color:black;text-align:center;text-shadow:5px 5px 5px Gray;  text-align: center;
