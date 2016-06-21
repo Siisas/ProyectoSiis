@@ -417,6 +417,14 @@ p {
     }
 
 
+    #jumbotron{
+    
+    visibility:hidden;
+    
+    
+    }
+
+
 
     #logoSena {
         width: 40%;
