@@ -24,7 +24,7 @@
        
 <asp:Content ID="Content3" ContentPlaceHolderID="ContenidoCuerpo" runat="server">
 
-                  <img style="width:1300px; margin-left:32px; " src="Imagenes/blogCeet.jpg" />
+                  <img class="Imagenblog" style="width:1300px; margin-left:32px; " src="Imagenes/blogCeet.jpg" />
    
 </asp:Content>
 

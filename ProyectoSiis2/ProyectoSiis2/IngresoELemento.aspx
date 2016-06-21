@@ -134,17 +134,19 @@
                         </td>
                     </tr>
 
-                    
-            </tbody>
-          </table>
-        </div>
-      </div>
-          
             <p>
                 <asp:Label ID="mensaje" Style="color:black;text-align:center;text-shadow:5px 5px 5px Gray;  text-align: center;
     font-weight:bold;" runat="server"></asp:Label>
             </p>
 
+                
+                                  
+            </tbody>
+          </table>
+        </div>
+      </div>
+          
+  
    
 </asp:Content>
 
