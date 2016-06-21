@@ -29,14 +29,14 @@
            Multiple lines will require custom code not provided by Bootstrap. -->
         <div class="masthead">
 
-            <nav>
+            <nav >
                 <ul class="nav nav-justified">
-                    <li class="active"><a href="Home.aspx"">Inicio</a></li>
-                    <li><a href="IngresoELemento.aspx">Ingreso Elemento</a></li>
-                    <li><a href="#">Prestamo</a></li>
-                    <li><a href="#">Devolución</a></li>
-                    <li><a href="ReservaElemento.aspx">Reservas</a></li>
-                    <li><a href="InventarioElemento.aspx">Inventarios</a></li>
+                    <li><a  href="Home.aspx"">Inicio</a></li>
+                    <li><a  href="IngresoELemento.aspx">Ingreso Elemento</a></li>
+                    <li class="active" ><a  href="#">Prestamo</a></li>
+                    <li><a  href="#">Devolución</a></li>
+                    <li><a  href="ReservaElemento.aspx">Reservas</a></li>
+                    <li><a  href="InventarioElemento.aspx">Inventarios</a></li>
                 </ul>
             </nav>
         </div>

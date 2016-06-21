@@ -103,13 +103,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Calendar CalendarIng;
         
         /// <summary>
-        /// Label5 control.
+        /// Label10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Label Label10;
         
         /// <summary>
         /// TxtObservaciones control.
@@ -121,13 +121,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.TextBox TxtObservaciones;
         
         /// <summary>
-        /// Label9 control.
+        /// Label5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
+        protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
         /// TxtFk_Id_Categoria control.
@@ -139,13 +139,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.TextBox TxtFk_Id_Categoria;
         
         /// <summary>
-        /// Label7 control.
+        /// Label6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
         /// TxtFk_Id_Estado control.
@@ -157,13 +157,13 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.TextBox TxtFk_Id_Estado;
         
         /// <summary>
-        /// Label8 control.
+        /// Label9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
+        protected global::System.Web.UI.WebControls.Label Label9;
         
         /// <summary>
         /// TxtReserva control.

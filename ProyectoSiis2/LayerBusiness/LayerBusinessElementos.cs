@@ -47,7 +47,7 @@ namespace LayerBusiness
             }
 
         }
-        public int EditarElementos(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, Int64 Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
+        public int EditarElementos(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
 
         {
             try
@@ -66,11 +66,7 @@ namespace LayerBusiness
             }
         }
 
-        public void SpInsertarElemento1(long v, string text1, string text2, string text3, string text4, string text5, DateTime dateTime, object text6, string text7)
-        {
-            throw new NotImplementedException();
-        }
-
+      
         public int EliminarElemento(Int64 IdElemento)
         {
             try
@@ -148,5 +144,7 @@ namespace LayerBusiness
                 ObjBS = null;
             }
         }
+
+      
     }
 }

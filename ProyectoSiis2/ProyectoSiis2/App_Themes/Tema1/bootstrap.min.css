@@ -39,10 +39,6 @@ a {
     color:white;
 }
 
-    a:active, a:hover {
-        outline: 0;
-        color:red;
-    }
 
 abbr[title] {
     border-bottom: 1px dotted;
@@ -1392,6 +1388,7 @@ figure {
 
 img {
     vertical-align: middle;
+    width: 1275px;
 }
 
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
@@ -4304,7 +4301,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
             .nav > li > a:focus, .nav > li > a:hover {
                 text-decoration: none;
-                background-color: #eee;
+                
             }
 
         .nav > li.disabled > a {
@@ -4597,7 +4594,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     }
 }
 
-.navbar-fixed-bottom, .navbar-fixed-top {
+.navbar-fixed-bottom, .bar-fixed-top {
     position: fixed;
     right: 0;
     left: 0;
@@ -5359,7 +5356,7 @@ a.badge:focus, a.badge:hover {
 }
 
 .jumbotron {
-    padding-top: 0px;
+    padding-top: 7px;
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: inherit;
@@ -5367,6 +5364,7 @@ a.badge:focus, a.badge:hover {
     margin-top:-243px;
     width:1294px;
     margin-left:-77px;
+    visibility:hidden;
 }
 
     .jumbotron .h1, .jumbotron h1 {
@@ -5388,6 +5386,8 @@ a.badge:focus, a.badge:hover {
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 6px;
+    width: 133%;
+    margin-left: -194px;
 }
 
 .jumbotron .container {
@@ -5396,8 +5396,9 @@ a.badge:focus, a.badge:hover {
 
 @media screen and (min-width:768px) {
     .jumbotron {
-        padding-top: 48px;
-        padding-bottom: 48px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display:none;
     }
 
     .container .jumbotron, .container-fluid .jumbotron {

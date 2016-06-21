@@ -4,11 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <link href="App_Themes/Tema1/bootstrap.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="App_Themes/Tema1/bootstrap.css" rel="stylesheet" />
+    <link href="App_Themes/Tema1/bootstrap-theme.min.css" rel="stylesheet" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -16,7 +18,7 @@
 <body>
     <form id="form1" runat="server">
 
-          <div>
+        <div>
             <div class="Principal">
 
                 <div id="header">
@@ -28,10 +30,6 @@
                     <div id="banner">
 
                         <asp:ContentPlaceHolder ID="ContenidoBanner" runat="server">
-                            
-
-
-
                         </asp:ContentPlaceHolder>
 
                     </div>
@@ -39,21 +37,20 @@
 
                     <div id="cuerpos">
                         <asp:ContentPlaceHolder ID="ContenidoCuerpo" runat="server">
-                   
-                            
-                            
-                            
-                                 
                         </asp:ContentPlaceHolder>
-                        
-                         
+
+
+                        <asp:ContentPlaceHolder ID="ContenidoPie" runat="server">
+                        </asp:ContentPlaceHolder>
+
+
                     </div>
                 </div>
             </div>
 
         </div>
 
-   
+
     </form>
 </body>
 

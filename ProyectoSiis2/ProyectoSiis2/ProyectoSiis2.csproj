@@ -71,11 +71,14 @@
     <Content Include="App_Themes\Tema1\bootstrap.css" />
     <Content Include="App_Themes\Tema1\bootstrap.min.css" />
     <Content Include="App_Themes\Tema1\functionHome.js" />
-    <Content Include="App_Themes\Tema1\navbar.css" />
     <Content Include="App_Themes\Tema1\glyphicons-halflings-regular.svg" />
     <Content Include="App_Themes\Tema1\bootstrap.js" />
     <Content Include="App_Themes\Tema1\bootstrap.min.js" />
+    <Content Include="App_Themes\Tema1\justified-nav.css" />
     <Content Include="App_Themes\Tema1\npm.js" />
+    <Content Include="App_Themes\Tema1\sticky-footer-navbar.css" />
+    <Content Include="App_Themes\Tema1\theme.css" />
+    <Content Include="Imagenes\blogCeet.jpg" />
     <Content Include="Imagenes\calendar.jpg" />
     <Content Include="Imagenes\devolucion.JPG" />
     <Content Include="Imagenes\favicon.ico" />

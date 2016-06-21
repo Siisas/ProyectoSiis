@@ -31,12 +31,21 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.Label mensaje;
         
         /// <summary>
-        /// BtnMostrar control.
+        /// GVDatos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnMostrar;
+        protected global::System.Web.UI.WebControls.GridView GVDatos;
+        
+        /// <summary>
+        /// LblMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblMsg;
     }
 }
