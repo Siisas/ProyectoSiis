@@ -78,6 +78,7 @@
     <Content Include="App_Themes\Tema1\npm.js" />
     <Content Include="App_Themes\Tema1\sticky-footer-navbar.css" />
     <Content Include="App_Themes\Tema1\theme.css" />
+    <Content Include="Imagenes\bg-footer.jpg" />
     <Content Include="Imagenes\blogCeet.jpg" />
     <Content Include="Imagenes\calendar.jpg" />
     <Content Include="Imagenes\devolucion.JPG" />
