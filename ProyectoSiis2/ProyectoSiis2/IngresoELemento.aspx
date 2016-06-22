@@ -28,7 +28,7 @@
 <%--      <div class="page-header">
         <h1>Ingrese elemento</h1>
       </div>--%>
-      <div class="row">
+      <%--<div class="row">
         <div class="col-md-6">
           <table class="table">
             <thead>
@@ -127,13 +127,97 @@
                         </td>
                     </tr>
                 <tr>
+      --%> 
+    
+    <section class="content-header">
+        <h6 style="margin-left:250px; color:white;">.</h6>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box box-tools">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Id de Control</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtIdElemento" runat="server" CssClass="form-control " Width="600px   "></asp:TextBox>
+                            <label>Número Placa</label>1
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtNumeroPlaca" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+                    <div class="form-group1">
+                            <label>Número Serial</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtNumeroSerial" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+                    <div class="form-group1">
+                            <label>Marca</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtMarca" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+                        <div class="form-group1">
+                            <label>Categoria</label>
+                        </div>
+                        <div class="form-group1">
+                           <asp:TextBox ID="TxtCategoria" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+            <div class="col-md-6">
+                <div class="box box-tools">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Modelo</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtModelo" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+                    <div class="form-group1">
+                            <label>Fecha Ingreso</label>
+                        </div>
+                        <div class="form-group1">
+                         <asp:TextBox ID="TxtFecha_Ingreso" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+              <asp:ImageButton ID="ImagenCal" runat="server"  ImageUrl="~/Imagenes/calendar.jpg" Width="35px" OnClick="ImagenCal_Click"/>
+                            <asp:Calendar ID="CalendarIng" runat="server"  OnSelectionChanged="CalendarIng_SelectionChanged"></asp:Calendar>
+                                             </div>
+
+                    <div class="form-group1">
+                            <label>Nombre Elemento</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtNombreElemento" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+                    <div class="form-group1">
+                            <label>Estado</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtEstado" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+       
+            
+                <tr>
                         <td class="auto-style2">&nbsp;</td>
                         <td>
-                              <asp:Button ID ="Button1" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:8px; margin-left:10px;" runat = "server" Text = "Guardar" OnClick="BtnGuardar_Click"/>
-                            <asp:Button ID="Button2" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:3px;margin-left:10px;" runat="server" Text="Cancelar" />
+                              <asp:Button ID ="BtnGuardar" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:17%; margin-left:65%;" runat = "server" Text = "Guardar" OnClick="BtnGuardar_Click"/>
+                            <asp:Button ID="BtnCancelar" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:3px;margin-left:10px;" runat="server" Text="Cancelar" />
                         </td>
                     </tr>
-
+            
+       
+    </section>
+    
+               
     
                 
                                   

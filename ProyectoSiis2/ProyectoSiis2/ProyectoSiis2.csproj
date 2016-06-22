@@ -108,6 +108,7 @@
     <Content Include="App_Themes\Tema1\glyphicons-halflings-regular.ttf" />
     <Content Include="App_Themes\Tema1\glyphicons-halflings-regular.woff" />
     <Content Include="App_Themes\Tema1\glyphicons-halflings-regular.woff2" />
+    <Content Include="App_Themes\Tema1\forms.less" />
     <None Include="Properties\PublishProfiles\siis - Web Deploy.pubxml">
       <SubType>Designer</SubType>
     </None>
