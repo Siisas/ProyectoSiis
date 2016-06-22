@@ -25,9 +25,9 @@
 
 
 
-<%--      <div class="page-header">
+<%--     <div class="page-header">
         <h1>Ingrese elemento</h1>
-      </div>--%>
+      </div>
       <div class="row">
         <div class="col-md-6">
           <table class="table">
@@ -134,13 +134,109 @@
           </table>
         </div>
       </div>
-          
+          --%>
              
-            <p>
+           <%-- <p>
+                <asp:Label ID="mensaje" Style="color:black;text-align:center;text-shadow:5px 5px 5px Gray;  text-align: center;
+    font-weight:bold;" runat="server"></asp:Label>
+            </p>--%>
+   
+    
+
+    
+    <section class="content-header">
+        <h6 style="margin-left:250px; color:white;">.</h6>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box box-tools">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Id Reserva</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtId_Reserva" runat="server" CssClass="form-control " Width="600px   "></asp:TextBox>
+                            <label>Nombre Solicitante</label>1
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtNombre_Solicitante" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+                    <div class="form-group1">
+                            <label>IdElemento</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtFk_Id_Elemento" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+                    <div class="form-group1">
+                            <label>Observaciones</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtObservaciones" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+                        <div class="form-group1">
+                            <label>Categoria</label>
+                        </div>
+                        <div class="form-group1">
+                           <asp:TextBox ID="TxtFk_Id_Categoria" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+            <div class="col-md-6">
+                <div class="box box-tools">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>IdEstado</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtFk_Id_Estado" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+                        </div>
+                    <div class="form-group1">
+                            <label>Fecha Ingreso</label>
+                        </div>
+                        <div class="form-group1">
+                         <asp:TextBox ID="TxtFecha_Reserva" runat="server" CssClass="form-control" Width="600px" ></asp:TextBox>
+              <asp:ImageButton ID="ImagenCal" runat="server"  ImageUrl="~/Imagenes/calendar.jpg" Width="35px" OnClick="ImagenCal_Click"/>
+                            <asp:Calendar ID="CalendarIng" runat="server"  OnSelectionChanged="CalendarIng_SelectionChanged"></asp:Calendar>
+                                             </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+       
+            
+                <tr>
+                        <td class="auto-style2">&nbsp;</td>
+                        <td>
+                              <asp:Button ID ="BtnGuardar" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:15%; margin-left:65%;" runat = "server" Text = "Guardar" OnClick="BtnGuardar_Click"/>
+                            <asp:Button ID="BtnCancelar" Style="background-color:#5eb319;color:white;border-radius:10px 10px;margin-top:3px;margin-left:10px;" runat="server" Text="Cancelar" />
+                        </td>
+                    </tr>
+            
+       
+    </section>
+    
+               
+    
+                
+                                  
+            </tbody>
+          </table>
+        </div>
+      </div>
+          
+          
+          <p>
                 <asp:Label ID="mensaje" Style="color:black;text-align:center;text-shadow:5px 5px 5px Gray;  text-align: center;
     font-weight:bold;" runat="server"></asp:Label>
             </p>
-   
+
+
 </asp:Content>
 
               <asp:Content ID="Content4" ContentPlaceHolderID="ContenidoPie" runat="server">

@@ -146,7 +146,7 @@ namespace LayerData
 
 
         //LayerData de Reservas Para la Pagina reserva
-        public int InsertarReserva(string Id_Reserva, string Nombre_Solicitante, Int64 Fk_Id_Elemento, DateTime Fecha_Reserva, string Observaciones, string Fk_Id_Categoria,string Fk_Id_Estado, string Reserva)
+        public int InsertarReserva(string Id_Reserva, string Nombre_Solicitante, Int64 Fk_Id_Elemento, DateTime Fecha_Reserva, string Observaciones, string Fk_Id_Categoria,string Fk_Id_Estado)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
