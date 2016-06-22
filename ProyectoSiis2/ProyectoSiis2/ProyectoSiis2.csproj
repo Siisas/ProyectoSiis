@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaEntidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CapaEntidades\bin\Debug\CapaEntidades.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -78,6 +82,7 @@
     <Content Include="App_Themes\Tema1\npm.js" />
     <Content Include="App_Themes\Tema1\sticky-footer-navbar.css" />
     <Content Include="App_Themes\Tema1\theme.css" />
+    <Content Include="CapaEntidades.dll" />
     <Content Include="Imagenes\bg-footer.jpg" />
     <Content Include="Imagenes\blogCeet.jpg" />
     <Content Include="Imagenes\calendar.jpg" />
@@ -98,6 +103,7 @@
     <Content Include="Imagenes\usuario.png" />
     <Content Include="IngresoELemento.aspx" />
     <Content Include="InventarioElemento.aspx" />
+    <Content Include="LoginSiis.aspx" />
     <Content Include="packages.config" />
     <Content Include="PaginaMaestra.Master" />
     <Content Include="App_Themes\Tema1\bootstrap-theme.css.map" />
@@ -157,6 +163,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LoginSiis.aspx.cs">
+      <DependentUpon>LoginSiis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginSiis.aspx.designer.cs">
+      <DependentUpon>LoginSiis.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -187,7 +200,9 @@
       <DependentUpon>WebMestra.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LayerBusiness\LayerBusiness.csproj">
       <Project>{ed344e18-86ae-490f-bdfc-a418f32dfd20}</Project>

@@ -10,9 +10,9 @@ namespace LayerData
 {
     public class LayerDataElementos
     {
-        public string strconn = @"Data Source = ufkadqmy3n.database.windows.net,1433; Initial Catalog = bdproyecto; Persist Security Info=True;User ID = pruebanomina; Password=AZUre2016";
+  //      public string strconn = @"Data Source = ufkadqmy3n.database.windows.net,1433; Initial Catalog = bdproyecto; Persist Security Info=True;User ID = pruebanomina; Password=AZUre2016";
 
-        //  public string strconn = @"Data Source=RICARD-PC;Initial Catalog=ProyectoSiis;Integrated Security=True";
+          public string strconn = @"Data Source=RICARD-PC;Initial Catalog=ProyectoSiis;Integrated Security=True";
         //Data Source = GALEX; Initial Catalog = pruebaspro1; Integrated Security = True
 
         //Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID = Siis@proyectosiis;Password={123456789Aa];Trusted_Connection=False;Encrypt=True;Connection Timeout = 30;
@@ -50,6 +50,12 @@ namespace LayerData
                 }
             }
         }
+
+        public object getInstance()
+        {
+            throw new NotImplementedException();
+        }
+
         public DataTable SpMostrarElemento()
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
