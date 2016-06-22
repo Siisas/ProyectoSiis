@@ -90,6 +90,7 @@
     <Content Include="Imagenes\inventario.JPG" />
     <Content Include="Imagenes\login.png" />
     <Content Include="Imagenes\LOGO.png" />
+    <Content Include="Imagenes\LogoSiis.png" />
     <Content Include="Imagenes\prestamo.JPG" />
     <Content Include="Imagenes\reservas.JPG" />
     <Content Include="Imagenes\sena.png" />

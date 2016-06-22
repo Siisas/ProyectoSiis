@@ -27,7 +27,7 @@
                 <div id="header">
 
                     <div id="cabecera">
-                        <img id="logoSena" src="Imagenes/sena.png" />
+                        <img id="logoSena" <img src="Imagenes/LogoSiis.png" /> 
                         <img id="logoSiis" src="Imagenes/LOGO.png " />
                     </div>
                     <div id="banner">

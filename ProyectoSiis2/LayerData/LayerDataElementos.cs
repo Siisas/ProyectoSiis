@@ -163,9 +163,6 @@ namespace LayerData
                     Ordensql.Parameters.AddWithValue("@Observaciones", Observaciones);
                     Ordensql.Parameters.AddWithValue("@Fk_Id_Categoria", Fk_Id_Categoria);
                     Ordensql.Parameters.AddWithValue("@Fk_Id_Estado", Fk_Id_Estado);
-                    Ordensql.Parameters.AddWithValue("@Reserva", Reserva);
-
-
                     return Ordensql.ExecuteNonQuery();
                 }
                 catch (Exception)
@@ -241,5 +238,6 @@ namespace LayerData
                 }
             }
         }
+
     }
 }
