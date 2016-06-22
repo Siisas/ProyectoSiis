@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayerData", "LayerData\Laye
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayerBusiness", "LayerBusiness\LayerBusiness.csproj", "{ED344E18-86AE-490F-BDFC-A418F32DFD20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidades", "CapaEntidades\CapaEntidades.csproj", "{950BDB2B-A55F-4FF4-ADE0-BF4181134931}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ED344E18-86AE-490F-BDFC-A418F32DFD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED344E18-86AE-490F-BDFC-A418F32DFD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED344E18-86AE-490F-BDFC-A418F32DFD20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950BDB2B-A55F-4FF4-ADE0-BF4181134931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950BDB2B-A55F-4FF4-ADE0-BF4181134931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950BDB2B-A55F-4FF4-ADE0-BF4181134931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950BDB2B-A55F-4FF4-ADE0-BF4181134931}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
