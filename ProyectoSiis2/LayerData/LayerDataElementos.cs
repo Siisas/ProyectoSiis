@@ -12,9 +12,9 @@ namespace LayerData
     {
         public string strconn = @"Data Source = ufkadqmy3n.database.windows.net,1433; Initial Catalog = bdproyecto; Persist Security Info=True;User ID = pruebanomina; Password=AZUre2016";
 
-      //  public string strconn = @"Data Source=RICARD-PC;Initial Catalog=ProyectoSiis;Integrated Security=True";
+        //  public string strconn = @"Data Source=RICARD-PC;Initial Catalog=ProyectoSiis;Integrated Security=True";
         //Data Source = GALEX; Initial Catalog = pruebaspro1; Integrated Security = True
-        
+
         //Server=tcp:proyectosiis.database.windows.net,1433;Database=Proyecto1;User ID = Siis@proyectosiis;Password={123456789Aa];Trusted_Connection=False;Encrypt=True;Connection Timeout = 30;
         public LayerDataElementos() { }
         //prueba
@@ -146,7 +146,7 @@ namespace LayerData
 
 
         //LayerData de Reservas Para la Pagina reserva
-        public int InsertarReserva(string Id_Reserva, string Nombre_Solicitante, Int64 Fk_Id_Elemento, DateTime Fecha_Reserva, string Observaciones, string Fk_Id_Categoria,string Fk_Id_Estado)
+        public int InsertarReserva(string Id_Reserva, string Nombre_Solicitante, Int64 Fk_Id_Elemento, DateTime Fecha_Reserva, string Observaciones, string Fk_Id_Categoria, string Fk_Id_Estado)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -178,7 +178,7 @@ namespace LayerData
             }
         }
 
-   //Mostrar Reserva para la pagina Gestion
+        //Mostrar Reserva para la pagina Gestion
 
         public DataTable MostrarReserva()
         {
@@ -208,8 +208,8 @@ namespace LayerData
             }
         }
 
-        //LayerData Prestamo
-        public DataTable Prestamo()
+        //LayerData Mostrar Prestamo
+        public DataTable MostrarPrestamo()
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -238,6 +238,43 @@ namespace LayerData
                 }
             }
         }
+
+
+        //Insertar Prestamo
+
+
+        public int InsertarPrestamo(Int64 Id_Prestamo, string Nombre_Solicitante, Int64 Fk_Id_Elemento, DateTime Fecha_Prestamo, string Observaciones, string Fk_Id_Estado, string Fk_Id_Categoria)
+        {
+            using (SqlConnection cnx = new SqlConnection(strconn))
+            {
+                cnx.Open();
+                SqlCommand Ordensql = new SqlCommand("SpInsertarPrestamo", cnx);
+                Ordensql.CommandType = CommandType.StoredProcedure;
+
+                try
+                {
+                    Ordensql.Parameters.AddWithValue("@Id_Prestamo", Id_Prestamo);
+                    Ordensql.Parameters.AddWithValue("@Nombre_Solicitante", Nombre_Solicitante);
+                    Ordensql.Parameters.AddWithValue("@Fk_Id_Elemento", Fk_Id_Elemento);
+                    Ordensql.Parameters.AddWithValue("@Fecha_Prestamo", Fecha_Prestamo);
+                    Ordensql.Parameters.AddWithValue("@Observaciones", Observaciones);
+                    Ordensql.Parameters.AddWithValue("@Fk_Id_Estado", Fk_Id_Estado);
+                    Ordensql.Parameters.AddWithValue("@Fk_Id_Categoria", Fk_Id_Categoria);
+                    return Ordensql.ExecuteNonQuery();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                finally
+                {
+                    cnx.Close();
+                    cnx.Dispose();
+                    Ordensql.Dispose();
+                }
+            }
+        }
+
 
     }
 }

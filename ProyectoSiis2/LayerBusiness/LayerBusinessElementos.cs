@@ -105,6 +105,9 @@ namespace LayerBusiness
             }
         }
 
+        
+
+
         //Mostrar Reserva
 
         public DataTable MostrarReserva()
@@ -125,14 +128,14 @@ namespace LayerBusiness
 
 
 
-        //mostrar Prestamo
+        //Insertar Prestamo
 
-       
-        public int Prestamo(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
+
+        public int InsertarPrestamo(Int64 Id_Prestamo, string Nombre_Solicitante, Int64 Fk_Id_Elemento, DateTime Fecha_Prestamo, string Observaciones, string Fk_Id_Estado, string Fk_Id_Categoria)
         {
             try
             {
-                return ObjBS.SpInsertarElemento1(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Categoria_Id_Categoria, Fecha_Ingreso, Nombre_Elemento, Estado_Id_Estado);
+                return ObjBS.InsertarPrestamo(Id_Prestamo, Nombre_Solicitante, Fk_Id_Elemento, Fecha_Prestamo, Observaciones, Fk_Id_Estado, Fk_Id_Categoria);
 
             }
             catch (Exception)
