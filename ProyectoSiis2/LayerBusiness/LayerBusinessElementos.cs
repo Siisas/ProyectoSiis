@@ -10,13 +10,13 @@ namespace LayerBusiness
     public class LayerBusinessElementos
     {
         LayerData.LayerDataElementos ObjBS = new LayerData.LayerDataElementos();
-        public int SpIngreso_Elemento(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, Int64 Categoria_Id_Categoria, DateTime Fecha_Ingreso, Int64 Estado_Id_Estado, string Nombre_Elemento,Int64 FK_Id_Empleado)
+        public int SpInsertarElemento1(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
 
 
         {
             try
             {
-                return ObjBS.SpIngreso_Elemento(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Categoria_Id_Categoria, Fecha_Ingreso, Estado_Id_Estado, Nombre_Elemento,FK_Id_Empleado);
+                return ObjBS.SpInsertarElemento1(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Categoria_Id_Categoria, Fecha_Ingreso, Estado_Id_Estado, Nombre_Elemento);
             }
             catch (Exception)
             {
@@ -47,13 +47,12 @@ namespace LayerBusiness
             }
 
         }
-
-        public int SpEditarElemento(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, Int64 Categoria_Id_Categoria, DateTime Fecha_Ingreso, Int64 Estado_Id_Estado, string Nombre_Elemento)
+        public int EditarElementos(Int64 Id_Elemento, string N_placa, string N_Serial, string Marca, string Modelo, string Categoria_Id_Categoria, DateTime Fecha_Ingreso, string Estado_Id_Estado, string Nombre_Elemento)
 
         {
             try
             {
-                return ObjBS.SpEditarElemento(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Categoria_Id_Categoria, Fecha_Ingreso, Estado_Id_Estado, Nombre_Elemento);
+                return ObjBS.SpEditarElemento(Id_Elemento, N_placa, N_Serial, Marca, Modelo, Categoria_Id_Categoria, Fecha_Ingreso, Nombre_Elemento, Estado_Id_Estado);
 
             }
             catch (Exception)
@@ -149,6 +148,6 @@ namespace LayerBusiness
             }
         }
 
-        
+      
     }
 }

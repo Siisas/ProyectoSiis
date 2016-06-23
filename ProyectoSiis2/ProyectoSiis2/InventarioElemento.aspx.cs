@@ -149,8 +149,6 @@ namespace ProyectoSiis2
         {
             LayerBusiness.LayerBusinessElementos oLB = new LayerBusiness.LayerBusinessElementos();
             Int64 Id_Elemento = Convert.ToInt64(GVDatos.DataKeys[e.RowIndex].Value.ToString());
-            
-            
 
             int result = 0;
 
@@ -172,7 +170,7 @@ namespace ProyectoSiis2
 
             try
             {
-                result = oLB.SpEditarElemento(Id_Elemento, TNP.Text, TNS.Text, TM.Text, TMO.Text, Int64.Parse(TC.Text), Convert.ToDateTime(TFI.Text), Int64.Parse(TE.Text),TNE.Text);
+                result = oLB.EditarElementos(Id_Elemento, TNP.Text, TNS.Text, TM.Text, TMO.Text,TC.Text, Convert.ToDateTime(TFI.Text),TE.Text,TNE.Text);
                 if (result > 0)
                 {
                     LblMsg.Text = "EMpleado Editado";
