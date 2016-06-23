@@ -41,7 +41,7 @@
                             <label>Id Reserva</label>
                         </div>
                         <div class="form-group1">
-                            <asp:TextBox ID="TxtId_Reserva" runat="server" CssClass="form-control " Width="600px   "></asp:TextBox>
+                            <asp:TextBox ID="TxtId_Reserva" runat="server" CssClass="form-control " Width="600px" " TextMode="Number" ></asp:TextBox>
                             <label>Nombre Solicitante</label>1
                         </div>
                         <div class="form-group1">
@@ -51,7 +51,7 @@
                             <label>IdElemento</label>
                         </div>
                         <div class="form-group1">
-                            <asp:TextBox ID="TxtFk_Id_Elemento" runat="server" CssClass="form-control" Width="600px"></asp:TextBox>
+                            <asp:TextBox ID="TxtFk_Id_Elemento" runat="server" CssClass="form-control" Width="600px" " TextMode="Number" ></asp:TextBox>
                         </div>
                         <div class="form-group1">
                             <label>Observaciones</label>
@@ -63,7 +63,7 @@
                             <label>Categoria</label>
                         </div>
                         <div class="form-group1">
-                            <asp:TextBox ID="TxtFk_Id_Categoria" runat="server" CssClass="form-control" Width="600px"></asp:TextBox>
+                            <asp:TextBox ID="TxtFk_Id_Categoria" runat="server" CssClass="form-control" Width="600px" " TextMode="Number" ></asp:TextBox>
                         </div>
 
                     </div>
@@ -77,7 +77,7 @@
                             <label>IdEstado</label>
                         </div>
                         <div class="form-group1">
-                            <asp:TextBox ID="TxtFk_Id_Estado" runat="server" CssClass="form-control" Width="600px"></asp:TextBox>
+                            <asp:TextBox ID="TxtFk_Id_Estado" runat="server" CssClass="form-control" Width="600px" " TextMode="Number" ></asp:TextBox>
                         </div>
                         <div class="form-group1">
                             <label>Fecha Ingreso</label>

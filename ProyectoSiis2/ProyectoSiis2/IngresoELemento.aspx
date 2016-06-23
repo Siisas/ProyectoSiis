@@ -38,7 +38,7 @@
                             <label>Id de Control</label>
                         </div>
                         <div class="form-group1">
-                            <asp:TextBox ID="TxtIdElemento" runat="server" CssClass="form-control " Width="600px   "></asp:TextBox>
+                            <asp:TextBox ID="TxtIdElemento" runat="server" CssClass="form-control " Width="600px   " TextMode="Number"></asp:TextBox>
                             <label>Número Placa</label>1
                         </div>
                         <div class="form-group1">
@@ -60,13 +60,13 @@
                             <label>Categoria</label>
                         </div>
                         <div class="form-group1">
-                            <asp:TextBox ID="TxtCategoria" runat="server" CssClass="form-control" Width="600px"></asp:TextBox>
+                            <asp:TextBox ID="TxtCategoria" runat="server" CssClass="form-control" Width="600px"  " TextMode="Number" ></asp:TextBox>
                         </div>
                         <div class="form-group1">
                             <label>Id_Empleado</label>
                         </div>
                         <div class="form-group1">
-                            <asp:TextBox ID="TxtFK_Id_Empleado" runat="server" CssClass="form-control" Width="600px"></asp:TextBox>
+                            <asp:TextBox ID="TxtFK_Id_Empleado" runat="server" CssClass="form-control" Width="600px"> " TextMode="Number" </asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                             <label>Estado</label>
                         </div>
                         <div class="form-group1">
-                            <asp:TextBox ID="TxtEstado" runat="server" CssClass="form-control" Width="600px"></asp:TextBox>
+                            <asp:TextBox ID="TxtEstado" runat="server" CssClass="form-control" Width="600px" " TextMode="Number" ></asp:TextBox>
                         </div>
                         
                     </div>
@@ -140,7 +140,7 @@
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ContenidoPie" runat="server">
     <footer class="footer">
-        <link href="App_Themes/Tema1/sticky-footer-navbar.css" rel="stylesheet" />
+      <link href="App_Themes/Tema1/sticky-footer-navbar.css" rel="stylesheet" />
         <div class="container">
             <p class="text-muted">Sena  ©2016  ADSI Ficha 908163  Instructor Jesus Rubio </p>
         </div>
