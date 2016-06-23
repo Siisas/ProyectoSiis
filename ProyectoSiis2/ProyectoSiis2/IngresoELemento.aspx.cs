@@ -53,7 +53,7 @@ namespace ProyectoSiis2
             {
                 try
                 {
-                    oLB.SpInsertarElemento1(Convert.ToInt64(TxtIdElemento.Text), TxtNumeroPlaca.Text, TxtNumeroSerial.Text, TxtMarca.Text, TxtModelo.Text, TxtCategoria.Text,Convert.ToDateTime(TxtFecha_Ingreso.Text), TxtEstado.Text, TxtNombreElemento.Text );
+                    oLB.SpIngreso_Elemento(Convert.ToInt64(TxtIdElemento.Text), TxtNumeroPlaca.Text, TxtNumeroSerial.Text, TxtMarca.Text, TxtModelo.Text, Convert.ToInt64(TxtCategoria.Text),Convert.ToDateTime(TxtFecha_Ingreso.Text),Convert.ToInt64(TxtEstado.Text), TxtNombreElemento.Text, Convert.ToInt64(TxtFK_Id_Empleado.Text));
                     mensaje.Text = "Elemento Ingresado con Exito";
                 }
                 catch (Exception exc)

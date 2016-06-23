@@ -62,7 +62,12 @@
                         <div class="form-group1">
                             <asp:TextBox ID="TxtCategoria" runat="server" CssClass="form-control" Width="600px"></asp:TextBox>
                         </div>
-
+                        <div class="form-group1">
+                            <label>Id_Empleado</label>
+                        </div>
+                        <div class="form-group1">
+                            <asp:TextBox ID="TxtFK_Id_Empleado" runat="server" CssClass="form-control" Width="600px"></asp:TextBox>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -97,6 +102,7 @@
                         <div class="form-group1">
                             <asp:TextBox ID="TxtEstado" runat="server" CssClass="form-control" Width="600px"></asp:TextBox>
                         </div>
+                        
                     </div>
                 </div>
             </div>

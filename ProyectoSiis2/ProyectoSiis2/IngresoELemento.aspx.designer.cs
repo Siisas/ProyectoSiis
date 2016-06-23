@@ -58,6 +58,15 @@ namespace ProyectoSiis2 {
         protected global::System.Web.UI.WebControls.TextBox TxtCategoria;
         
         /// <summary>
+        /// TxtFK_Id_Empleado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtFK_Id_Empleado;
+        
+        /// <summary>
         /// TxtModelo control.
         /// </summary>
         /// <remarks>
